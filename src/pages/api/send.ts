@@ -9,7 +9,7 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse) 
       if (!email || !user_name || !phone || !message) throw '';
 
       await mail.transporter.sendMail({
-        to: 'contato@tratyvet.com.br',
+        to: 'marketing@tratyvet.com.br',
         from: process.env.MAIL,
         subject: 'Message from Website',
         html: [
