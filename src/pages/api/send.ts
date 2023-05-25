@@ -1,4 +1,6 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
+import { readFile } from 'fs/promises';
+import { join } from 'path';
+import { NextApiRequest, NextApiResponse } from 'next';
 import { mail } from 'services/mail';
 
 export default async function handle(req: NextApiRequest, res: NextApiResponse) {
@@ -7,17 +9,23 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse) 
       const { email, user_name, phone, message } = req.body;
 
       if (!email || !user_name || !phone || !message) throw '';
+      const htmlTemplate = await readFile(
+        join(process.cwd(), 'src/assets/mail', 'mail.html'),
+        'utf-8',
+      );
+
+      const replacedHTML = htmlTemplate
+        .replaceAll('{{EMAIL}}', email)
+        .replaceAll('{{USER_NAME}}', user_name)
+        .replaceAll('{{PHONE}}', phone)
+        .replaceAll('{{MESSAGE}}', message);
 
       await mail.transporter.sendMail({
         to: 'marketing@tratyvet.com.br',
-        from: process.env.MAIL,
-        subject: 'Message from Website',
-        html: [
-          `<strong>Name:</strong> ${user_name}<br />`,
-          `<strong>Email:</strong> ${email}<br />`,
-          `<strong>Phone:</strong> ${phone}<br /><br />`,
-          `<strong>Message:</strong> ${message}`,
-        ].join(''),
+        from: { name: 'Message from Website', address: process.env.MAIL! },
+        replyTo: email,
+        subject: 'Tratyvet Website',
+        html: replacedHTML,
       });
       return res.status(200).end('Sended');
     } else {
