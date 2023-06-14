@@ -82,16 +82,23 @@ export const Sidebar = ({
                   setMarkerIds([id]);
                 }}
               >
-                <div className="w-full min-h-[8rem] block overflow-hidden">
-                  <Image
-                    alt=""
-                    src={imageUrl}
-                    width={2080}
-                    height={2080}
-                    className="w-full h-full block group-hover:scale-110 transition object-cover object-center"
-                  />
-                </div>
-                <span className="break-all px-2 text-sm">{desc}</span>
+                {imageUrl?.length ? (
+                  <div className="w-full min-h-[8rem] block overflow-hidden">
+                    <Image
+                      alt=""
+                      src={imageUrl}
+                      width={2080}
+                      height={2080}
+                      className="w-full h-full block group-hover:scale-110 transition object-cover object-center"
+                    />
+                  </div>
+                ) : (
+                  <></>
+                )}
+                <span
+                  className="break-all px-2 text-sm pt-4"
+                  dangerouslySetInnerHTML={{ __html: desc.replaceAll(',', '<br />') }}
+                />
                 <div className="flex flex-col items-end px-2 gap-1 pb-4 text-xs">
                   <span>{locale}</span>
                   <span className="bg-gray-300 w-fit p-1 px-4 rounded-full">

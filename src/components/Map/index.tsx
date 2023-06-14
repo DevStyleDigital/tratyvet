@@ -2,7 +2,6 @@
 import { Wrapper } from '@googlemaps/react-wrapper';
 import React, { useEffect, useRef, useState } from 'react';
 import locatesInfo from '@root/locates-info.json';
-import Image from 'next/image';
 import { Sidebar } from './Sidebar';
 
 function getDistance(lat1: number, lon1: number, lat2: number, lon2: number) {
