@@ -32,7 +32,7 @@ export const Sidebar = ({
       className={clsx(
         'absolute top-0 left-0 h-full transition-all lg:translate-x-0 -translate-x-full',
         { 'translate-x-0': sidebarOpen },
-      )}git 
+      )}
     >
       <button
         className={clsx(
