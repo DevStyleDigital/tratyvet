@@ -32,12 +32,15 @@ export const Sidebar = ({
       className={clsx(
         'absolute top-0 left-0 h-full transition-all lg:translate-x-0 -translate-x-full',
         { 'translate-x-0': sidebarOpen },
-      )}
+      )}git 
     >
       <button
         className={clsx(
-          'lg:hidden absolute right-0 top-0 m-4 p-2 rounded-sm bg-gray-200 text-gray-600',
-          { 'translate-x-[calc(100%+1rem+1rem)] bg-white': !sidebarOpen },
+          'lg:hidden absolute right-0 w-fit flex top-0 m-4 p-2 text-left rounded-sm bg-gray-200 text-gray-600',
+          {
+            'top-10 bg-white w-[calc(100vw-10%)] max-w-max right-unset left-[calc(100%-6px)]':
+              !sidebarOpen,
+          },
         )}
         aria-label="Toggle Sidebar"
         aria-labelledby="sidebar"
@@ -47,10 +50,10 @@ export const Sidebar = ({
         {sidebarOpen ? (
           <Cross1Icon className="w-5 h-5" />
         ) : (
-          <DotsHorizontalIcon className="w-5 h-5" />
+          <span className="w-full flex">Conheça mais sobre o distribuidor</span>
         )}
       </button>
-      <div className="custom-scrollbar left-0 w-80 py-8 lg:py-4 overflow-y-auto px-4 h-full bg-white shadow-md">
+      <div className="custom-scrollbar left-0 min-w-80 py-8 lg:py-4 overflow-y-auto px-4 h-full bg-white shadow-sm">
         <div className="pb-8 px-4">
           {postalCodeSubmitted && (
             <button
