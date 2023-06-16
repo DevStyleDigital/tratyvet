@@ -72,8 +72,8 @@ export const Sidebar = ({
 
           {!hasError &&
             locatesInfo
-              .filter((locateInfo) =>
-                markerIds.length ? markerIds.includes(locateInfo.id) : true,
+              .filter((locateInfo, i) =>
+                markerIds.length ? markerIds.includes(locateInfo.id) : i <= 300,
               )
               .map(({ imageUrl, desc, id, locale, postalCode, ...coordinates }) => (
                 <div
