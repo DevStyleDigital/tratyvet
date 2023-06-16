@@ -54,7 +54,7 @@ export const Sidebar = ({
           { 'translate-x-0': sidebarOpen },
         )}
       >
-        <div className="custom-scrollbar left-0 min-w-80 py-8 lg:py-4 overflow-y-auto px-4 h-full bg-white shadow-sm">
+        <div className="custom-scrollbar left-0 min-w-80 max-w-xs w-full py-8 lg:py-4 overflow-y-auto px-4 h-full bg-white shadow-sm">
           <div className="pb-8 px-4">
             {postalCodeSubmitted && (
               <button

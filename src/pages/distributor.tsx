@@ -13,7 +13,8 @@ const Distributor = () => {
   const [countrySelector, setCountrySelector] = useState<Country | null>();
   const [postalCode, setPostalCode] = useState<string | undefined>();
   const [postalCodesSubmitted, setPostalCodeSubmitted] = useState<string | undefined>();
-  const [error, setError] = useState<undefined | string>();
+  const [error, setError] = useState<boolean>(false);
+  const [errorMsg, setErrorMsg] = useState<undefined | string>();
   const [fetchingCords, setFetchingCords] = useState(false);
   const [latitude, setLatitude] = useState(0);
   const [longitude, setLongitude] = useState(0);
@@ -21,19 +22,24 @@ const Distributor = () => {
   function handlePostalCode(v: undefined | string) {
     setPostalCode('');
     setPostalCodeSubmitted(v);
-    setError(undefined);
+    setError(false);
+    setErrorMsg(undefined);
   }
 
   const fetchLatLng = async () => {
     setFetchingCords(true);
-    setError(undefined);
+    setError(false);
+    setErrorMsg(undefined);
     setPostalCodeSubmitted(postalCode);
     getCordsByPostalCode(postalCode!, countrySelector?.code!)
       .then(({ lat, lng }) => {
         setLatitude(lat);
         setLongitude(lng);
       })
-      .catch(setError)
+      .catch((msg) => {
+        setError(true);
+        setErrorMsg(msg);
+      })
       .finally(() => setFetchingCords(false));
   };
 
@@ -59,7 +65,10 @@ const Distributor = () => {
                 placeholder={t('hero.input')}
                 value={postalCode}
                 className="bg-transparent w-full outline-none text-text placeholder:text-text/40"
-                onChange={(ev) => setPostalCode(ev.target.value)}
+                onInput={(ev) => {
+                  setPostalCode((ev.target as HTMLInputElement).value);
+                  setErrorMsg(undefined);
+                }}
               />
               <Button type="submit" color={colors.secondary} colorHover={violet['600']}>
                 {t('hero.button')}
@@ -69,8 +78,8 @@ const Distributor = () => {
           <span className={`mt-8${!fetchingCords ? ' text-red-600' : ''}`}>
             {fetchingCords ? (
               <>{t('loading')}</>
-            ) : error ? (
-              t(`error.${error}` as 'error')
+            ) : errorMsg ? (
+              t(`error.${errorMsg}` as 'error')
             ) : (
               ''
             )}
@@ -85,7 +94,7 @@ const Distributor = () => {
           setPostalCodeSubmitted={handlePostalCode}
           setLatitude={setLatitude}
           setLongitude={setLongitude}
-          hasError={!!error}
+          hasError={error}
         />
       </section>
     </>

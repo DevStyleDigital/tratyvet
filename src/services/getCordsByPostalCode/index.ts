@@ -5,7 +5,9 @@ export async function getCordsByPostalCode(postalCode: string, countryCode: stri
     // );
     // const data = await response.json();
     const res = await fetch(
-      `https://maps.googleapis.com/maps/api/geocode/json?components=country:${countryCode}&address=${postalCode}&key=${process.env.NEXT_PUBLIC_MAP_KEY}`,
+      `https://maps.googleapis.com/maps/api/geocode/json?region=${countryCode.toLowerCase()}&address=${postalCode}&key=${
+        process.env.NEXT_PUBLIC_MAP_KEY
+      }`,
     );
     const data = await res.json();
 
