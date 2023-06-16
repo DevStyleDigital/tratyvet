@@ -31,7 +31,7 @@ export const Sidebar = ({
     <>
       <button
         className={clsx(
-          'lg:hidden absolute left-[-6px] w-fit z-50 flex top-0 m-4 p-2 text-left rounded-sm bg-gray-200 text-gray-600',
+          'lg:hidden absolute left-[-6px] w-fit z-10 flex top-0 m-4 p-2 text-left rounded-sm bg-gray-200 text-gray-600',
           {
             'left-full -translate-x-[calc(100%+3rem)]': sidebarOpen,
             'top-10 bg-white w-[calc(100vw-10%)] max-w-max': !sidebarOpen,
