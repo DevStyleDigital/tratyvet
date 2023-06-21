@@ -2,6 +2,7 @@ import { Table } from 'components/Table';
 import { productsColumn } from 'components/Table/utils/products';
 import { useLang } from 'hooks/use-lang';
 import { GetServerSideProps } from 'next';
+import { useState } from 'react';
 import { protectDashboardPages } from 'services/supabase/protect-admin-pages';
 import { Product } from 'types/product';
 
@@ -10,6 +11,7 @@ const Dash = ({
 }: {
   products: Omit<Product, 'items' | 'desc' | 'imageUrl'>[];
 }) => {
+  const [productsData, setProductsData] = useState(products);
   const { t } = useLang('dash');
 
   return (
@@ -18,8 +20,8 @@ const Dash = ({
         {t('dash-title')}:
       </h1>
       <Table
-        columns={productsColumn}
-        rows={products}
+        columns={productsColumn(setProductsData)}
+        rows={productsData}
         pageSize={10}
         rowsPerPageOptions={[10]}
         disableSelectionOnClick
