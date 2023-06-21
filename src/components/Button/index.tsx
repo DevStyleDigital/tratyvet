@@ -1,6 +1,7 @@
 import colors from '@root/colors.json';
 import { teal as tealColor } from 'tailwindcss/colors';
 import clsx from 'clsx';
+import Link from 'next/link';
 
 export const Button: BTypes.FC<{
   variant?: 'outline' | 'default';
@@ -18,11 +19,11 @@ export const Button: BTypes.FC<{
   color,
   ...props
 }) => {
-  const Comp = href ? 'a' : 'button';
+  const Comp = href ? Link : 'button';
 
   return (
     <Comp
-      href={href}
+      href={href!}
       {...props}
       style={{
         ['--color' as string]: color || colors.primary,

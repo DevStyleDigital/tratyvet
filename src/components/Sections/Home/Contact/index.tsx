@@ -3,10 +3,11 @@ import { useLang } from 'hooks/use-lang';
 import { Button } from 'components/Button';
 import { http } from 'services/http';
 import { useState } from 'react';
+import { WhatsApp } from 'assets/svgs/whatsapp';
 
 const CONTACT_WAYS = {
   address: [0],
-  phone: [0],
+  phone: [0, 1],
   email: [0, 1],
   marketing: [0],
   'talk-traty-vet': [0, 1],
@@ -39,13 +40,13 @@ export const Contact = () => {
   }
 
   return (
-    <section className="max-desk px-4">
+    <section className="max-desk px-4" id="contact">
       <Title subtitle={t('contact.subtitle')} size="large">
         {t('contact.title')}
       </Title>
 
       <div className="flex justify-between gap-16 max-[820px]:flex-col max-[820px]:items-center">
-        <div className="max-w-xs">
+        <div className="max-w-sm">
           <span className="font-semibold block text-xl max-[820px]:text-center font-sans-secondary mb-8">
             {t('contact.ways.title')}
           </span>
@@ -59,6 +60,9 @@ export const Contact = () => {
                   {value.map((id) => (
                     <li key={key + id} className="flex">
                       <span className="w-1 h-1 flex-shrink-0 bg-text rounded-full mr-2 mt-[0.6rem]" />
+                      {key === 'phone' && id === 1 ? (
+                        <WhatsApp className="w-4 h-4 self-center mr-2" />
+                      ) : null}
                       {t(`contact.ways.${key}.${id}` as 'contact')}
                     </li>
                   ))}

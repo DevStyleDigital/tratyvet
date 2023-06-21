@@ -156,11 +156,12 @@ export const enUS: typeof ptBR = {
         phone: {
           title: 'Phone',
           0: '(14) 3335-2880',
+          1: '(14) 99707-6526',
         },
         email: {
           title: 'Email',
-          0: 'contact@tratyvet.com.br',
-          1: 'tratyvet@tratyvet.com',
+          0: 'sac@tratyvet.com.br',
+          1: 'marketing@tratyvet.com',
         },
         marketing: {
           title: 'Marketing',

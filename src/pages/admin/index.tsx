@@ -17,7 +17,7 @@ const Admin = () => {
 
   return (
     <div className="flex h-screen w-full items-center justify-center">
-      <div className="max-w-lg w-full">
+      <div className="max-w-lg w-full px-2">
         <h2 className="uppercase font-bold">LOGIN:</h2>
         <Auth
           supabaseClient={supabaseClient}

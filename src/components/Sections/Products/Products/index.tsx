@@ -39,34 +39,39 @@ export const Products = ({
           {products
             .filter(({ type }) => type === productSelectedType)
             .map((product) => (
-              <li key={product.id} className="shadow-header rounded-lg">
+              <li
+                key={product.id}
+                className="shadow-header rounded-lg transition-transform hover:scale-105"
+              >
                 <Link
                   href={`/products/${product.id}`}
-                  className="flex flex-col items-center p-4 gap-2 "
+                  className="flex flex-col items-center p-4 gap-2 h-full"
                 >
                   <Image
                     src={product.imageUrl}
                     alt={product.name}
                     width={2000}
                     height={2000}
-                    className="w-[75%] h-auto object-cover"
+                    className="w-auto h-52 object-cover"
                   />
-                  <div className="flex self-start flex-col gap-4">
-                    <span className="font-bold">{product.name}</span>
-                    <span
-                      dangerouslySetInnerHTML={{ __html: purifyText(product.desc) }}
-                      className="[&>p]:max-h-16 [&>p]:[display:-webkit-box] text-sm [&>p]:[-webkit-line-clamp:3] [&>p]:[-webkit-box-orient:vertical] [&>p]:overflow-hidden [&>p]:text-ellipsis"
-                    />
+                  <div className="flex flex-col w-full justify-between h-full">
+                    <div className="flex self-start flex-col gap-4">
+                      <span className="font-bold">{product.name}</span>
+                      <span
+                        dangerouslySetInnerHTML={{ __html: purifyText(product.desc) }}
+                        className="[&>p]:max-h-16 [&>p]:[display:-webkit-box] text-sm [&>p]:[-webkit-line-clamp:3] [&>p]:[-webkit-box-orient:vertical] [&>p]:overflow-hidden [&>p]:text-ellipsis"
+                      />
+                    </div>
+                    <Button
+                      size="big"
+                      className="w-full flex justify-center mt-4"
+                      color={colors.secondary}
+                      colorHover={violet['600']}
+                    >
+                      <PlusIcon className="w-6 h-6" />
+                      <span>{t('products.read-more')}</span>
+                    </Button>
                   </div>
-                  <Button
-                    size="big"
-                    className="w-full flex justify-center"
-                    color={colors.secondary}
-                    colorHover={violet['600']}
-                  >
-                    <PlusIcon className="w-6 h-6" />
-                    <span>{t('products.read-more')}</span>
-                  </Button>
                 </Link>
               </li>
             ))}
