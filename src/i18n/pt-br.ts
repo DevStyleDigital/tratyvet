@@ -176,7 +176,7 @@ export const ptBR = {
   distributor: {
     hero: {
       title: 'Encontre um distribuidor',
-      input: 'Digite aqui seu CEP',
+      input: 'Seu Endereço ou CEP',
       button: 'Procurar',
       select: 'Escolha um país',
     },

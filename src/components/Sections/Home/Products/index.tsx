@@ -35,7 +35,7 @@ export const Products = ({
       />
       <div className="flex items-center justify-center flex-col mt-10">
         <div className="flex px-3 flex-wrap mb-10">
-          <ul className="w-full">
+          <ul className="w-full flex flex-wrap justify-center gap-8">
             {products
               .filter(
                 ({ category }) =>
