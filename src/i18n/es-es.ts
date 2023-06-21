@@ -175,16 +175,16 @@ export const esES: typeof ptBR = {
   },
   distributor: {
     hero: {
-      title: 'Encontre um distribuidor',
-      input: 'Digite aqui seu CEP',
-      button: 'Procurar',
-      select: 'Escolha um país',
+      title: 'Encuentra un distribuidor',
+      input: 'Ingrese su código postal aquí',
+      button: 'Buscar',
+      select: 'Seleccione un país',
     },
     error: {
-      'no-result': 'Nenhum resultado foi encontrado para o CEP inserido.',
-      error: 'Ops... Tente novamente mais tarde.',
+      'no-result': 'No se encontraron resultados para el código postal ingresado.',
+      error: 'Ups... Inténtalo de nuevo más tarde.',
     },
-    loading: 'Carregando...',
+    loading: 'Cargando...',
   },
   products: {
     hero: {
@@ -211,10 +211,10 @@ export const esES: typeof ptBR = {
   },
   tags: {
     0: 'Todos',
-    1: 'Cuidado de bebés',
-    2: 'Secado rápido',
-    3: 'Dorado',
-    4: 'Limpieza profunda',
+    1: 'Baby Care',
+    2: 'Dry Fast',
+    3: 'Golden',
+    4: 'Deep Clear',
   },
   footer: {
     rights: '<strong>© 2023 TratyVet.</strong> Todos los derechos reservados',
