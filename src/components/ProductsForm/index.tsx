@@ -84,7 +84,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
             id="product-name"
           />
         </label>
-        {/* <div>
+        <div>
           <Select
             required
             onValueChange={(value) => (formValues.category = value)}
@@ -104,7 +104,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
               </Select.Option>
             ))}
           </Select>
-        </div> */}
+        </div>
         <div>
           <Select
             required

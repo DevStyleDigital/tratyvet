@@ -3,6 +3,7 @@ export type Product = {
   name: string;
   imageUrl: string;
   type: string;
+  category: string;
   desc: string;
   items:
     | { [key in string]?: { pack1: string; pack2: string; pack3: string } | null }
