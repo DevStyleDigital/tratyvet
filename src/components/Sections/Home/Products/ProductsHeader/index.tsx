@@ -2,10 +2,8 @@ import { CustomHeader } from 'components/CustomHeader';
 
 const TAGS = [
   { key: 'tags.0', value: 'all' },
-  { key: 'tags.1', value: 'baby_care' },
-  { key: 'tags.2', value: 'dry_fast' },
-  { key: 'tags.3', value: 'golden' },
-  { key: 'tags.4', value: 'deep_clear' },
+  { key: 'tags.1', value: 'lines' },
+  { key: 'tags.2', value: 'colonies' },
 ];
 
 type Tag = typeof TAGS;

@@ -203,10 +203,8 @@ export const esES: typeof ptBR = {
   },
   tags: {
     0: 'Todos',
-    1: 'Baby Care',
-    2: 'Dry Fast',
-    3: 'Golden',
-    4: 'Deep Clear',
+    1: 'Líneas',
+    2: 'Colonias',
   },
   footer: {
     rights: '<strong>© 2023 TratyVet.</strong> Todos los derechos reservados',

@@ -15,7 +15,7 @@ import { ProductsHeader } from './ProductsHeader';
 export const Products = ({
   products,
 }: {
-  products: Pick<Product, 'category' | 'id' | 'imageUrl' | 'name'>[];
+  products: Pick<Product, 'type' | 'id' | 'imageUrl' | 'name'>[];
 }) => {
   const { t } = useLang('home');
   const router = useRouter();
@@ -38,8 +38,7 @@ export const Products = ({
           <ul className="w-full flex flex-wrap justify-center gap-8">
             {products
               .filter(
-                ({ category }) =>
-                  productSelectedTag === 'all' || category === productSelectedTag,
+                ({ type }) => productSelectedTag === 'all' || type === productSelectedTag,
               )
               .map((product) => (
                 <li
