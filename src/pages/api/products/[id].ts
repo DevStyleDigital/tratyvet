@@ -29,6 +29,7 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse) 
 
     if (req.method === 'DELETE') {
       await supabase.from('products').delete().eq('id', id);
+      await storage.in(`products/${id}`).delete('image.webp');
       return res.status(200).end('Deleted');
     }
     if (req.method === 'PUT') {
@@ -43,11 +44,8 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse) 
       let imageUrl = undefined;
       if (file) {
         const fileBuffer = readFileSync(file.filepath);
-        const filenameSplit = file.originalFilename!.split('.');
-        const fileExtension = filenameSplit[filenameSplit.length - 1];
-
-        await storage.in('products').update(`${id}/image.${fileExtension}`, fileBuffer);
-        imageUrl = storage.in(`products/${id}`).getUrl(`image.${fileExtension}`);
+        await storage.in('products').update(`${id}/image.webp`, fileBuffer);
+        imageUrl = storage.in(`products/${id}`).getUrl('image.webp');
       }
 
       await supabase

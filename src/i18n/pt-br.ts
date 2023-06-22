@@ -60,12 +60,8 @@ export const ptBR = {
           ...acc,
           [key[0]]: {
             label: key[1],
-            'input-min': {
-              label: 'Capacidade mínima (ml ou L):',
-              placeholder: 'Selecione...',
-            },
-            'input-max': {
-              label: 'Capacidade máxima (ml ou L):',
+            'input-embalagem': {
+              label: 'Embalagem',
               placeholder: 'Selecione...',
             },
           },
@@ -152,18 +148,14 @@ export const ptBR = {
           0: 'Rua Pedro Migliari, 1119 Jardim Furlan, Ourinhos – SP',
         },
         phone: {
-          title: 'Telefone',
+          title: 'Telefones',
           0: '(14) 3335-2880',
           1: '(14) 99707-6526',
         },
         email: {
-          title: 'E-mail',
+          title: 'E-mails',
           0: 'sac@tratyvet.com.br',
           1: 'marketing@tratyvet.com',
-        },
-        marketing: {
-          title: 'Marketing',
-          0: 'marketing@tratyvet.com.br',
         },
         'talk-traty-vet': {
           title: 'Fale com a Traty Vet',

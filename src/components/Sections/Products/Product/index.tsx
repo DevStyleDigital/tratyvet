@@ -1,4 +1,4 @@
-import { NewsletterForm } from 'components/NewsletterForm';
+// import { NewsletterForm } from 'components/NewsletterForm';
 import { Title } from 'components/Title';
 import { useLang } from 'hooks/use-lang';
 import Image from 'next/image';
@@ -51,7 +51,7 @@ export const Product = ({ product }: { product: ProductType }) => {
             </ul>
             <hr className="w-full h-[2px] bg-secondary/20 my-8" />
           </div>
-          <NewsletterForm className="max-lg:flex-col [&_button]:w-full [&_input,&_button]:!max-w-full" />
+          {/* <NewsletterForm className="max-lg:flex-col [&_button]:w-full [&_input,&_button]:!max-w-full" /> */}
         </div>
       </section>
     </section>

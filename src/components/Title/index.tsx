@@ -13,7 +13,7 @@ export const Title: BTypes.FC<{ subtitle: string; size?: 'large' | 'small' }> = 
         props.className,
         'max-w-[25rem] mb-10 mx-auto flex flex-col items-center text-center',
         {
-          'max-w-[35rem]': size === 'large',
+          'max-w-[40rem]': size === 'large',
         },
       )}
     >

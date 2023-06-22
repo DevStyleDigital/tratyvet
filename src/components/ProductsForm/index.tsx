@@ -13,11 +13,12 @@ import { Product } from 'types/product';
 
 const optionsMl = [
   { value: 'none', label: 'None' },
+  { value: '60ml', label: '60ml' },
+  { value: '100ml', label: '100ml' },
+  { value: '200ml', label: '200ml' },
   { value: '300ml', label: '300ml' },
+  { value: '500ml', label: '500ml' },
   { value: '1l', label: '1L' },
-  { value: '2l', label: '2L' },
-  { value: '3l', label: '3L' },
-  { value: '4l', label: '4L' },
   { value: '5l', label: '5L' },
 ];
 
@@ -70,7 +71,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
       <h1 className="mb-8 tracking-[0.12em] text-4xl min-[512px]:text-[2.75rem] font-extrabold font-sans-secondary uppercase">
         {t(product ? 'update' : 'create')}:
       </h1>
-      <div className="flex-desk flex-wrap">
+      <div className="flex-desk !justify-start flex-wrap">
         <label htmlFor="product-name" className="input-label !w-fit">
           <span>{`${t('product.inputs.name.label')}*`}</span>
           <input
@@ -83,7 +84,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
             id="product-name"
           />
         </label>
-        <div>
+        {/* <div>
           <Select
             required
             onValueChange={(value) => (formValues.category = value)}
@@ -103,7 +104,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
               </Select.Option>
             ))}
           </Select>
-        </div>
+        </div> */}
         <div>
           <Select
             required
@@ -140,15 +141,17 @@ export const ProductForm = ({ product }: { product?: Product }) => {
                   (formValues.items = {
                     ...formValues.items,
                     [item.key]: {
-                      max: formValues.items?.[item.key]?.max!,
-                      min: value,
+                      ...(formValues.items?.[item.key]! || {}),
+                      pack1: value,
                     },
                   })
                 }
-                defaultValue={product?.items?.[item.key]?.min}
-                label={t(`product.${item.key}.input-min.label` as 'product')}
+                defaultValue={product?.items?.[item.key]?.pack1}
+                label={`${t(`product.${item.key}.input-embalagem.label` as 'product')} 1`}
                 className="md:w-[23rem] w-full"
-                placeholder={t(`product.${item.key}.input-min.placeholder` as 'product')}
+                placeholder={t(
+                  `product.${item.key}.input-embalagem.placeholder` as 'product',
+                )}
               >
                 {optionsMl.map((option) => (
                   <Select.Option value={option.value} key={option.value}>
@@ -163,15 +166,42 @@ export const ProductForm = ({ product }: { product?: Product }) => {
                   (formValues.items = {
                     ...formValues.items,
                     [item.key]: {
-                      min: formValues.items?.[item.key]?.min!,
-                      max: value,
+                      ...(formValues.items?.[item.key]! || {}),
+                      pack2: value,
                     },
                   })
                 }
-                defaultValue={product?.items?.[item.key]?.max}
-                label={t(`product.${item.key}.input-max.label` as 'product')}
+                defaultValue={product?.items?.[item.key]?.pack2}
+                label={`${t(`product.${item.key}.input-embalagem.label` as 'product')} 2`}
                 className="md:w-[23rem] w-full"
-                placeholder={t(`product.${item.key}.input-max.placeholder` as 'product')}
+                placeholder={t(
+                  `product.${item.key}.input-embalagem.placeholder` as 'product',
+                )}
+              >
+                {optionsMl.map((option) => (
+                  <Select.Option value={option.value} key={option.value}>
+                    {option.label}
+                  </Select.Option>
+                ))}
+              </Select>
+            </div>
+            <div>
+              <Select
+                onValueChange={(value) =>
+                  (formValues.items = {
+                    ...formValues.items,
+                    [item.key]: {
+                      ...(formValues.items?.[item.key]! || {}),
+                      pack3: value,
+                    },
+                  })
+                }
+                defaultValue={product?.items?.[item.key]?.pack3}
+                label={`${t(`product.${item.key}.input-embalagem.label` as 'product')} 3`}
+                className="md:w-[23rem] w-full"
+                placeholder={t(
+                  `product.${item.key}.input-embalagem.placeholder` as 'product',
+                )}
               >
                 {optionsMl.map((option) => (
                   <Select.Option value={option.value} key={option.value}>
@@ -211,7 +241,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
             required
             credits={false}
             maxFileSize="5MB"
-            acceptedFileTypes={['image/png', 'image/jpeg', 'image/webp']}
+            acceptedFileTypes={['image/webp']}
             allowMultiple={false}
             name="files"
             server={{
@@ -221,7 +251,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
                   .then(load);
               },
             }}
-            labelIdle='Drag & Drop your files or <span class="filepond--label-action">Browse</span>'
+            labelIdle="Selecione ou solte sua imagem (.webp) aqui"
           />
         </div>
         {product && (
