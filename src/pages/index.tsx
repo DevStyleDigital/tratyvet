@@ -6,7 +6,7 @@ import { Product } from 'types/product';
 const Home = ({
   products,
 }: {
-  products: Pick<Product, 'category' | 'id' | 'imageUrl' | 'name'>[];
+  products: Pick<Product, 'type' | 'id' | 'imageUrl' | 'name'>[];
 }) => {
   return (
     <>
@@ -30,7 +30,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
     const { data } = await dashboard
       .from('products')
-      .select('id,category,imageUrl,name')
+      .select('id,type,imageUrl,name')
       .eq('type', 'lines');
 
     return {
