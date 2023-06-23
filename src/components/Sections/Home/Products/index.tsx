@@ -38,7 +38,8 @@ export const Products = ({
           <ul className="w-full flex flex-wrap justify-center gap-8">
             {products
               .filter(
-                ({ type }) => productSelectedTag === 'all' || type === productSelectedTag,
+                ({ type }, i) =>
+                  (productSelectedTag === 'all' || type === productSelectedTag) && i < 8,
               )
               .map((product) => (
                 <li

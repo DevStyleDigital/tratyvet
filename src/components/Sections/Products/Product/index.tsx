@@ -10,7 +10,11 @@ export const Product = ({ product }: { product: ProductType }) => {
   return (
     <section className="max-desk mt-10 px-4">
       <Title subtitle={product.name} size="large">
-        {product.type}
+        {t(
+          `types.${
+            product.type.toLowerCase().includes('lines') ? '0' : '1'
+          }` as 'product',
+        )}
       </Title>
 
       <section className="flex h-full max-lg:flex-col gap-14">
