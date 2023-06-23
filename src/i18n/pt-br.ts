@@ -55,6 +55,7 @@ export const ptBR = {
         ['shampoo', 'Inclui Shampoo?'],
         ['mask', 'Inclui Mascara?'],
         ['leave-in', 'Inclui Leave in?'],
+        ['cologne', 'Inclui Colonia?'],
       ].reduce(
         (acc, key) => ({
           ...acc,

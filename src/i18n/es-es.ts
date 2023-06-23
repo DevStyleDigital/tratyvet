@@ -57,6 +57,7 @@ export const esES: typeof ptBR = {
         ['shampoo', '¿Incluye Shampoo?'],
         ['mask', '¿Incluye Máscara?'],
         ['leave-in', '¿Incluye Leave in?'],
+        ['cologne', '¿Incluye Colonia?'],
       ].reduce(
         (acc, key) => ({
           ...acc,

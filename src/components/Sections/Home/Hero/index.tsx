@@ -14,9 +14,9 @@ export const Hero = () => {
             <span className="tracking-[0.4em] text-sm font-medium uppercase">
               {t('hero.subtitle')}
             </span>
-            <h1 className="hero-title">{t('hero.title')}</h1>
+            <h1 className="hero-title text-justify">{t('hero.title')}</h1>
             <p
-              className="text-white"
+              className="text-white text-justify"
               dangerouslySetInnerHTML={{
                 __html: purifyText(t('hero.description')),
               }}

@@ -26,7 +26,7 @@ export const About = () => {
         </div>
         <p
           dangerouslySetInnerHTML={{ __html: purifyText(t('about.text')) }}
-          className="lg:ml-9 text-xl"
+          className="lg:ml-9 text-xl text-justify"
         />
       </div>
     </section>

@@ -84,7 +84,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
             id="product-name"
           />
         </label>
-        <div>
+        {/* <div>
           <Select
             required
             onValueChange={(value) => (formValues.category = value)}
@@ -104,7 +104,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
               </Select.Option>
             ))}
           </Select>
-        </div>
+        </div> */}
         <div>
           <Select
             required
@@ -129,6 +129,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
         { key: 'shampoo', label: t('product.shampoo.label' as 'product') },
         { key: 'mask', label: t('product.mask.label' as 'product') },
         { key: 'leave-in', label: t('product.leave-in.label' as 'product') },
+        { key: 'cologne', label: t('product.cologne.label' as 'product') },
       ].map((item) => (
         <div key={item.key}>
           <span className="tracking-[0.12em] text-lg font-extrabold font-sans-secondary uppercase">

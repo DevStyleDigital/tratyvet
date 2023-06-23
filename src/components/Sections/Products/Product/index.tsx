@@ -10,7 +10,7 @@ export const Product = ({ product }: { product: ProductType }) => {
   return (
     <section className="max-desk mt-10 px-4">
       <Title subtitle={product.name} size="large">
-        {product.category}
+        {product.type}
       </Title>
 
       <section className="flex h-full max-lg:flex-col gap-14">

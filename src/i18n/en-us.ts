@@ -57,6 +57,7 @@ export const enUS: typeof ptBR = {
         ['shampoo', 'Includes Shampoo?'],
         ['mask', 'Includes Mask?'],
         ['leave-in', 'Includes Leave in?'],
+        ['cologne', 'Includes Cologne?'],
       ].reduce(
         (acc, key) => ({
           ...acc,
