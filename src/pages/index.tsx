@@ -28,10 +28,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   try {
     const dashboard = getDatabaseServer(ctx);
 
-    const { data } = await dashboard
-      .from('products')
-      .select('id,type,imageUrl,name')
-      .eq('type', 'lines');
+    const { data } = await dashboard.from('products').select('id,type,imageUrl,name');
 
     return {
       props: {

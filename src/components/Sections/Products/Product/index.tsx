@@ -19,7 +19,7 @@ export const Product = ({ product }: { product: ProductType }) => {
           alt={product.name}
           width={2000}
           height={2000}
-          className="w-[92%] h-auto shadow-header object-cover max-lg:w-1/2 max-sm:w-full self-center"
+          className="h-auto shadow-header object-cover w-1/2 max-sm:w-full self-center"
         />
 
         <div className="flex w-full flex-col justify-between h-auto">
@@ -27,13 +27,7 @@ export const Product = ({ product }: { product: ProductType }) => {
             <div dangerouslySetInnerHTML={{ __html: purifyText(product.desc) }} />
 
             <ul className="grid grid-cols-[repeat(3,auto)] gap-4 gap-y-8 mt-8 xs:justify-between max-xs:grid-cols-[repeat(2,auto)]">
-              {Object.entries(product.items || {}).map(([itemKey, item], i) => {
-                const itemExists =
-                  item?.pack1 !== 'none' &&
-                  item?.pack2 !== 'none' &&
-                  item?.pack1 &&
-                  item?.pack2;
-
+              {Object.entries(product.items || {}).map(([itemKey, item]) => {
                 return !item?.pack1 && !item?.pack2 && !item?.pack3 ? null : (
                   <li key={itemKey} className="flex flex-col gap-1">
                     <span className="text-primary">

@@ -197,6 +197,7 @@ export const enUS: typeof ptBR = {
         'leave-in': 'Leave-In',
         shampoo: 'Shampoo',
         mask: 'Mask',
+        cologne: 'Cologne',
       },
     },
     types: {

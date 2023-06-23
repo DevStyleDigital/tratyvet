@@ -195,6 +195,7 @@ export const esES: typeof ptBR = {
         'leave-in': 'Leave-In',
         shampoo: 'Shampoo',
         mask: 'Máscara',
+        cologne: 'Colonia',
       },
     },
     types: {

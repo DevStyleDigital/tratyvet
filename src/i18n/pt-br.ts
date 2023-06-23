@@ -195,6 +195,7 @@ export const ptBR = {
         'leave-in': 'Leave-In',
         shampoo: 'Shampoo',
         mask: 'Máscara',
+        cologne: 'Colônias',
       },
     },
     types: {
