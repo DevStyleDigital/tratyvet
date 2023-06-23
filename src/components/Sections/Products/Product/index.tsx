@@ -19,27 +19,27 @@ export const Product = ({ product }: { product: ProductType }) => {
           alt={product.name}
           width={2000}
           height={2000}
-          className="h-auto shadow-header object-cover w-1/2 max-sm:w-full self-center"
+          className="h-auto shadow-header object-cover w-[32rem] max-sm:w-full self-center"
         />
 
         <div className="flex w-full flex-col justify-between h-auto">
           <div className="w-full">
             <div dangerouslySetInnerHTML={{ __html: purifyText(product.desc) }} />
 
-            <ul className="grid grid-cols-[repeat(3,auto)] gap-4 gap-y-8 mt-8 xs:justify-between max-xs:grid-cols-[repeat(2,auto)]">
+            <ul className="flex flex-wrap gap-8 justify-between max-md:justify-center mt-10">
               {Object.entries(product.items || {}).map(([itemKey, item]) => {
                 return !item?.pack1 && !item?.pack2 && !item?.pack3 ? null : (
                   <li key={itemKey} className="flex flex-col gap-1">
-                    <span className="text-primary">
+                    <span className="text-primary max-md:text-center">
                       {t(`product.items.${itemKey}` as 'product')}
                     </span>
-                    <div className="flex gap-2 font-bold text-xl text-secondary/80">
+                    <div className="flex gap-2 max-[301px]:text-base font-bold text-xl text-secondary/80">
                       {[item?.pack1, item?.pack2, item?.pack3].map((pack, i, arr) =>
                         pack !== 'none' ? (
-                          <>
-                            {i > 0 && arr[i - 1] && arr[i - 1] !== 'none' ? '|' : ''}
-                            <span key={i}>{(pack as string)?.replace(/[l]/, 'L')}</span>
-                          </>
+                          <span key={i}>
+                            {i > 0 && arr[i - 1] && arr[i - 1] !== 'none' ? '| ' : ''}
+                            <span>{(pack as string)?.replace(/[l]/, 'L')}</span>
+                          </span>
                         ) : null,
                       )}
                     </div>
