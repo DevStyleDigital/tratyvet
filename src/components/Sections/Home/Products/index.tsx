@@ -12,6 +12,23 @@ import { useState } from 'react';
 import { Product } from 'types/product';
 import { ProductsHeader } from './ProductsHeader';
 
+function shuffle(array: any[]) {
+  let currentIndex = array.length,
+    randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
 export const Products = ({
   products,
 }: {
@@ -24,7 +41,7 @@ export const Products = ({
   );
 
   return (
-    <section className="max-desk">
+    <section className="max-desk !max-w-[80rem]">
       <Title subtitle={t('products.subtitle')} size="large">
         {t('products.title')}
       </Title>
@@ -36,11 +53,11 @@ export const Products = ({
       <div className="flex items-center justify-center flex-col mt-10">
         <div className="flex px-3 flex-wrap mb-10">
           <ul className="w-full flex flex-wrap justify-center gap-8">
-            {products
+            {(productSelectedTag === 'all' ? shuffle(products) : products)
               .filter(
-                ({ type }, i) =>
-                  (productSelectedTag === 'all' || type === productSelectedTag) && i < 8,
+                ({ type }) => productSelectedTag === 'all' || type === productSelectedTag,
               )
+              .filter((_, i) => i < 8)
               .map((product) => (
                 <li
                   key={product.id}
