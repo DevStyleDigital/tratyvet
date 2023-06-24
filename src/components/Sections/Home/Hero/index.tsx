@@ -14,7 +14,9 @@ export const Hero = () => {
             <span className="tracking-[0.4em] text-sm font-medium uppercase">
               {t('hero.subtitle')}
             </span>
-            <h1 className="hero-title text-justify">{t('hero.title')}</h1>
+            <h1 className="hero-title text-justify max-md:text-center">
+              {t('hero.title')}
+            </h1>
             <p
               className="text-white text-justify"
               dangerouslySetInnerHTML={{
@@ -25,15 +27,15 @@ export const Hero = () => {
           <hr className="w-full flex-shrink-0 flex my-8 rounded-full h-[2px] bg-secondary bg-opacity-30" />
           <div>
             {/* <NewsletterForm inputWhite /> */}
-            <div className="w-full items-center flex">
-              <div className="w-1/2">
+            <div className="w-full items-center flex max-sm:flex-col">
+              <div className="sm:w-1/2">
                 <span className="font-bold text-lg text-white">
                   {t('hero.info.clients.title')}
                 </span>
                 <p className="opacity-80 text-xs">{t('hero.info.clients.text')}</p>
               </div>
-              <hr className="w-[2px] flex-shrink-0 flex mx-4 rounded-full h-12 mt-2 bg-secondary bg-opacity-30" />
-              <div className="w-1/2">
+              <hr className="w-[2px] max-sm:hidden flex-shrink-0 flex mx-4 rounded-full h-12 sm:mt-2 bg-secondary bg-opacity-30" />
+              <div className="sm:w-1/2 max-sm:mt-4">
                 <span className="font-bold text-lg text-white">
                   {t('hero.info.states.title')}
                 </span>
@@ -42,7 +44,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="max-[1150px]:absolute left-1/2 ml-10 max-[1150px]:left-1/2 max-[1150px]:-translate-x-1/2 max-[1150px]:opacity-20 md:min-w-[30rem] min-[1150px]:-translate-y-[5%] max-sm:w-full">
+        <div className="max-[1150px]:absolute left-1/2 min-[1150px]:ml-10 max-[1150px]:-translate-x-1/2 max-[1150px]:opacity-20 md:min-w-[30rem] min-[1150px]:-translate-y-[5%] max-sm:w-full">
           <Image src={HeroBanner} priority alt={t('hero.image-alt')} />
         </div>
       </div>
