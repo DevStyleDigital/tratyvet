@@ -130,6 +130,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
         { key: 'mask', label: t('product.mask.label' as 'product') },
         { key: 'leave-in', label: t('product.leave-in.label' as 'product') },
         { key: 'cologne', label: t('product.cologne.label' as 'product') },
+        { key: 'conditioner', label: t('product.conditioner.label' as 'product') },
       ].map((item) => (
         <div key={item.key}>
           <span className="tracking-[0.12em] text-lg font-extrabold font-sans-secondary uppercase">

@@ -56,6 +56,7 @@ export const ptBR = {
         ['mask', 'Inclui Mascara?'],
         ['leave-in', 'Inclui Leave in?'],
         ['cologne', 'Inclui Colonia?'],
+        ['conditioner', 'Inclui Condicionador?'],
       ].reduce(
         (acc, key) => ({
           ...acc,
@@ -196,6 +197,7 @@ export const ptBR = {
         shampoo: 'Shampoo',
         mask: 'Máscara',
         cologne: 'Colônias',
+        conditioner: 'Condicionador',
       },
     },
     types: {
