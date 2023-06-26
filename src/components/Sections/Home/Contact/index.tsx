@@ -9,7 +9,6 @@ const CONTACT_WAYS = {
   address: [0],
   phone: [0, 1],
   email: [0, 1],
-  'talk-traty-vet': [0, 1],
 };
 
 export const Contact = () => {
@@ -60,7 +59,7 @@ export const Contact = () => {
                     <li key={key + id} className="flex">
                       <span className="w-1 h-1 flex-shrink-0 bg-text rounded-full mr-2 mt-[0.6rem]" />
                       {t(`contact.ways.${key}.${id}` as 'contact')}
-                      {key === 'phone' && id === 1 ? (
+                      {key === 'phone' && id === 2 ? (
                         <WhatsApp className="w-4 h-4 self-center ml-2" />
                       ) : null}
                     </li>

@@ -131,6 +131,9 @@ export const ProductForm = ({ product }: { product?: Product }) => {
         { key: 'leave-in', label: t('product.leave-in.label' as 'product') },
         { key: 'cologne', label: t('product.cologne.label' as 'product') },
         { key: 'conditioner', label: t('product.conditioner.label' as 'product') },
+        { key: 'conditioner', label: t('product.conditioner.label' as 'product') },
+        { key: 'detangler', label: t('product.detangler.label' as 'product') },
+        { key: 'ceruminolytic', label: t('product.ceruminolytic.label' as 'product') },
       ].map((item) => (
         <div key={item.key}>
           <span className="tracking-[0.12em] text-lg font-extrabold font-sans-secondary uppercase">
@@ -200,6 +203,56 @@ export const ProductForm = ({ product }: { product?: Product }) => {
                 }
                 defaultValue={product?.items?.[item.key]?.pack3}
                 label={`${t(`product.${item.key}.input-embalagem.label` as 'product')} 3`}
+                className="md:w-[23rem] w-full"
+                placeholder={t(
+                  `product.${item.key}.input-embalagem.placeholder` as 'product',
+                )}
+              >
+                {optionsMl.map((option) => (
+                  <Select.Option value={option.value} key={option.value}>
+                    {option.label}
+                  </Select.Option>
+                ))}
+              </Select>
+            </div>
+            <div>
+              <Select
+                onValueChange={(value) =>
+                  (formValues.items = {
+                    ...formValues.items,
+                    [item.key]: {
+                      ...(formValues.items?.[item.key]! || {}),
+                      pack4: value,
+                    },
+                  })
+                }
+                defaultValue={product?.items?.[item.key]?.pack4}
+                label={`${t(`product.${item.key}.input-embalagem.label` as 'product')} 4`}
+                className="md:w-[23rem] w-full"
+                placeholder={t(
+                  `product.${item.key}.input-embalagem.placeholder` as 'product',
+                )}
+              >
+                {optionsMl.map((option) => (
+                  <Select.Option value={option.value} key={option.value}>
+                    {option.label}
+                  </Select.Option>
+                ))}
+              </Select>
+            </div>
+            <div>
+              <Select
+                onValueChange={(value) =>
+                  (formValues.items = {
+                    ...formValues.items,
+                    [item.key]: {
+                      ...(formValues.items?.[item.key]! || {}),
+                      pack5: value,
+                    },
+                  })
+                }
+                defaultValue={product?.items?.[item.key]?.pack3}
+                label={`${t(`product.${item.key}.input-embalagem.label` as 'product')} 5`}
                 className="md:w-[23rem] w-full"
                 placeholder={t(
                   `product.${item.key}.input-embalagem.placeholder` as 'product',

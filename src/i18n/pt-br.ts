@@ -55,8 +55,10 @@ export const ptBR = {
         ['shampoo', 'Inclui Shampoo?'],
         ['mask', 'Inclui Mascara?'],
         ['leave-in', 'Inclui Leave in?'],
-        ['cologne', 'Inclui Colonia?'],
+        ['cologne', 'Inclui Colônia?'],
         ['conditioner', 'Inclui Condicionador?'],
+        ['detangler', 'Inclui Desembaraçador?'],
+        ['ceruminolytic', 'Inclui Ceruminolítico?'],
       ].reduce(
         (acc, key) => ({
           ...acc,
@@ -152,17 +154,13 @@ export const ptBR = {
         phone: {
           title: 'Telefones',
           0: '(14) 3335-2880',
-          1: '(14) 99707-6526',
+          1: '(14) 99763-0321',
+          2: '(14) 99707-6526',
         },
         email: {
           title: 'E-mails',
           0: 'sac@tratyvet.com.br',
           1: 'marketing@tratyvet.com',
-        },
-        'talk-traty-vet': {
-          title: 'Fale com a Traty Vet',
-          0: '(14) 99763-031',
-          1: 'sac@tratyvet.com.br',
         },
       },
     },
@@ -170,7 +168,7 @@ export const ptBR = {
   distributor: {
     hero: {
       title: 'Encontre um distribuidor',
-      input: 'Seu Endereço ou CEP',
+      input: 'Digite a sua cidade',
       button: 'Procurar',
       select: 'Escolha um país',
     },

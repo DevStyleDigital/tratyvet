@@ -32,14 +32,18 @@ export const Hero = () => {
                 <span className="font-bold text-lg text-white">
                   {t('hero.info.clients.title')}
                 </span>
-                <p className="opacity-80 text-xs">{t('hero.info.clients.text')}</p>
+                <p className="opacity-80 text-xs font-bold">
+                  {t('hero.info.clients.text')}
+                </p>
               </div>
               <hr className="w-[2px] max-sm:hidden flex-shrink-0 flex mx-4 rounded-full h-12 sm:mt-2 bg-secondary bg-opacity-30" />
               <div className="sm:w-1/2 max-sm:mt-4">
                 <span className="font-bold text-lg text-white">
                   {t('hero.info.states.title')}
                 </span>
-                <p className="opacity-80 text-xs">{t('hero.info.states.text')}</p>
+                <p className="opacity-80 text-xs font-bold">
+                  {t('hero.info.states.text')}
+                </p>
               </div>
             </div>
           </div>

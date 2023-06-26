@@ -5,7 +5,5 @@ export type Product = {
   type: string;
   category: string;
   desc: string;
-  items:
-    | { [key in string]?: { pack1: string; pack2: string; pack3: string } | null }
-    | null;
+  items: { [key in string]?: { [key: string]: string } | null } | null;
 };

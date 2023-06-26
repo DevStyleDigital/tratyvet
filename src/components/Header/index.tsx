@@ -69,7 +69,7 @@ export const Header = () => {
               </LanguageSelect.Option>
             ))}
           </LanguageSelect>
-          <Button variant="outline" href="#contact">
+          <Button variant="outline" href="/#contact">
             {t('header.button')}
           </Button>
         </section>

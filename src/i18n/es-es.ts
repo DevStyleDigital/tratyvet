@@ -59,6 +59,8 @@ export const esES: typeof ptBR = {
         ['leave-in', '¿Incluye Leave in?'],
         ['cologne', '¿Incluye Colonia?'],
         ['conditioner', '¿Incluye Acondicionador?'],
+        ['detangler', '¿Incluye desenredante?'],
+        ['ceruminolytic', '¿Incluye Ceruminolítico?'],
       ].reduce(
         (acc, key) => ({
           ...acc,
@@ -152,17 +154,13 @@ export const esES: typeof ptBR = {
         phone: {
           title: 'Teléfonos',
           0: '(14) 3335-2880',
-          1: '(14) 99707-6526',
+          1: '(14) 99763-0321',
+          2: '(14) 99707-6526',
         },
         email: {
           title: 'Correos electrónicos',
           0: 'sac@tratyvet.com.br',
           1: 'marketing@tratyvet.com',
-        },
-        'talk-traty-vet': {
-          title: 'Habla con Traty Vet',
-          0: '(14) 99763-031',
-          1: 'sac@tratyvet.com.br',
         },
       },
     },
@@ -170,7 +168,7 @@ export const esES: typeof ptBR = {
   distributor: {
     hero: {
       title: 'Encuentra un distribuidor',
-      input: 'Ingrese su código postal aquí',
+      input: 'Ingresa tu ciudad',
       button: 'Buscar',
       select: 'Seleccione un país',
     },

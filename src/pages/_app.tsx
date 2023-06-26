@@ -21,6 +21,7 @@ import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
 import 'filepond-plugin-image-edit/dist/filepond-plugin-image-edit.css';
 import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
 import Head from 'next/head';
+import { WhatsApp } from 'assets/svgs/whatsapp';
 
 // Register the plugins
 registerPlugin(
@@ -62,7 +63,22 @@ const MyApp: BTypes.NPage<AppProps> = ({ Component, pageProps, router }) => {
           ) : router.route.includes('/admin') ? (
             <></>
           ) : (
-            <Header />
+            <>
+              <Header />
+              <div className="fixed bottom-8 right-8 flex z-[100] rounded-full bg-green-600 hover:scale-105 transition-all">
+                <a
+                  href={`https://wa.me/14997630321?text=${encodeURIComponent(
+                    'Olá vim do site!',
+                  )}`}
+                  className="p-4 w-fit"
+                  aria-label="WhatsApp"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <WhatsApp className="w-8 h-8 text-white" />
+                </a>
+              </div>
+            </>
           )}
           <div className="w-full">
             <main
