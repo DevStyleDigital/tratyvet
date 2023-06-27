@@ -1,6 +1,6 @@
 import { Title } from 'components/Title';
 import { useLang } from 'hooks/use-lang';
-import DogImage from 'assets/imgs/dog.png';
+import MascotImage from 'assets/imgs/mascots.png';
 import Image from 'next/image';
 import { purifyText } from 'services/purifyText';
 
@@ -17,7 +17,7 @@ export const About = () => {
         <div className="lg:min-w-[30.25rem] max-lg:!w-60 h-auto">
           <Image
             placeholder="blur"
-            src={DogImage}
+            src={MascotImage}
             alt={t('about.image-alt')}
             className="rounded-2xl shadow-sm w-full h-full"
             width={480}
