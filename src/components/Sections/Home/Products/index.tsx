@@ -1,4 +1,3 @@
-import { ButtonIcon } from '@radix-ui/react-icons';
 import colors from '@root/colors.json';
 import { ArrowForward } from 'assets/svgs/arrow-forward';
 import { PlusCircleIcon } from 'assets/svgs/plus-circle';
@@ -11,23 +10,7 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { Product } from 'types/product';
 import { ProductsHeader } from './ProductsHeader';
-
-function shuffle(array: any[]) {
-  let currentIndex = array.length,
-    randomIndex;
-
-  // While there remain elements to shuffle.
-  while (currentIndex != 0) {
-    // Pick a remaining element.
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-  }
-
-  return array;
-}
+import { shuffle } from 'utils/shuffle';
 
 export const Products = ({
   products,

@@ -59,12 +59,12 @@ const Distributor = () => {
             <div className="flex gap-4 items-center px-6 shadow-header rounded-lg bg-white py-4 w-full">
               <SearchIcon className="min-w-[1rem] min-h-[1rem] opacity-50 m-1" />
               <input
-                type="tel"
+                type="text"
                 required
                 name="postal_code"
                 placeholder={t('hero.input')}
                 value={postalCode}
-                className="bg-transparent w-full outline-none text-text placeholder:text-text/40"
+                className="bg-transparent w-full outline-none text-text placeholder:text-text/40 max-sm:placeholder:text-sm"
                 onInput={(ev) => {
                   setPostalCode((ev.target as HTMLInputElement).value);
                   setErrorMsg(undefined);

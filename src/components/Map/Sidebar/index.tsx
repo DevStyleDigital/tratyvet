@@ -1,8 +1,11 @@
-import { Cross1Icon, DotsHorizontalIcon } from '@radix-ui/react-icons';
+import { Cross1Icon } from '@radix-ui/react-icons';
 import locatesInfo from '@root/locates-info.json';
 import clsx from 'clsx';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { shuffle } from 'utils/shuffle';
+
+const LOCATES = shuffle(locatesInfo);
 
 export const Sidebar = ({
   setPostalCodeSubmitted,
@@ -21,11 +24,14 @@ export const Sidebar = ({
   setLongitude: (v: number) => void;
   hasError: boolean;
 }) => {
+  const [isClient, setIsClient] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const handleSidebarToggle = () => {
     setSidebarOpen(!sidebarOpen);
   };
+
+  useEffect(() => setIsClient(true), []);
 
   return (
     <>
@@ -70,47 +76,46 @@ export const Sidebar = ({
             )}
           </div>
 
-          {!hasError &&
-            locatesInfo
-              .filter((locateInfo, i) =>
-                markerIds.length ? markerIds.includes(locateInfo.id) : i <= 300,
-              )
-              .map(({ imageUrl, desc, id, locale, postalCode, ...coordinates }) => (
-                <div
-                  className="flex flex-col mb-4 group overflow-hidden gap-2 shadow-md select-none cursor-pointer bg-gray-200 rounded-lg transition"
-                  key={id}
-                  onClick={() => {
-                    setLatitude(coordinates.lat);
-                    setLongitude(coordinates.lon);
-                    setPostalCodeSubmitted(postalCode);
-                    setMarkerIds([id]);
-                  }}
-                >
-                  {imageUrl?.length ? (
-                    <div className="w-full min-h-[8rem] block overflow-hidden">
-                      <Image
-                        alt=""
-                        src={imageUrl}
-                        width={2080}
-                        height={2080}
-                        className="w-full h-full block group-hover:scale-110 transition object-cover object-center"
-                      />
-                    </div>
-                  ) : (
-                    <></>
-                  )}
-                  <span
-                    className="break-all px-2 text-sm pt-4"
-                    dangerouslySetInnerHTML={{ __html: desc.replaceAll(',', '<br />') }}
-                  />
-                  <div className="flex flex-col items-end px-2 gap-1 pb-4 text-xs">
-                    <span>{locale}</span>
-                    <span className="bg-gray-300 w-fit p-1 px-4 rounded-full">
-                      {postalCode}
-                    </span>
+          {isClient &&
+            !hasError &&
+            LOCATES.filter((locateInfo, i) =>
+              markerIds.length ? markerIds.includes(locateInfo.id) : i <= 300,
+            ).map(({ imageUrl, desc, id, locale, postalCode, ...coordinates }) => (
+              <div
+                className="flex flex-col mb-4 group overflow-hidden gap-2 shadow-md select-none cursor-pointer bg-gray-200 rounded-lg transition"
+                key={id}
+                onClick={() => {
+                  setLatitude(coordinates.lat);
+                  setLongitude(coordinates.lon);
+                  setPostalCodeSubmitted(postalCode);
+                  setMarkerIds([id]);
+                }}
+              >
+                {imageUrl?.length ? (
+                  <div className="w-full min-h-[8rem] block overflow-hidden">
+                    <Image
+                      alt=""
+                      src={imageUrl}
+                      width={2080}
+                      height={2080}
+                      className="w-full h-full block group-hover:scale-110 transition object-cover object-center"
+                    />
                   </div>
+                ) : (
+                  <></>
+                )}
+                <span
+                  className="break-all px-2 text-sm pt-4"
+                  dangerouslySetInnerHTML={{ __html: desc.replaceAll(',', '<br />') }}
+                />
+                <div className="flex flex-col items-end px-2 gap-1 pb-4 text-xs">
+                  <span>{locale}</span>
+                  <span className="bg-gray-300 w-fit p-1 px-4 rounded-full">
+                    {postalCode}
+                  </span>
                 </div>
-              ))}
+              </div>
+            ))}
         </div>
       </div>
     </>

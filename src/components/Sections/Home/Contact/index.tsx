@@ -7,7 +7,7 @@ import { WhatsApp } from 'assets/svgs/whatsapp';
 
 const CONTACT_WAYS = {
   address: [0],
-  phone: [0, 1],
+  phone: [0, 1, 2],
   email: [0, 1],
 };
 
