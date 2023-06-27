@@ -32,31 +32,23 @@ export const Product = ({ product }: { product: ProductType }) => {
 
             <ul className="flex flex-wrap gap-8 justify-between max-md:justify-center mt-10">
               {Object.entries(product.items || {}).map(([itemKey, item]) => {
-                const packs = [
-                  item?.pack1,
-                  item?.pack2,
-                  item?.pack3,
-                  item?.pack4,
-                  item?.pack5,
-                ];
+                const packs = Object.values(item || {});
                 return packs.every((pack) => !pack || pack === 'none') ? null : (
-                  <>
-                    <li key={itemKey} className="flex flex-col gap-1">
-                      <span className="text-primary max-md:text-center">
-                        {t(`product.items.${itemKey}` as 'product')}
-                      </span>
-                      <div className="flex gap-2 max-[301px]:text-base font-bold text-xl text-secondary/80">
-                        {packs.map((pack, i, arr) =>
-                          pack !== 'none' ? (
-                            <span key={i}>
-                              {i > 0 && arr[i - 1] && arr[i - 1] !== 'none' ? '| ' : ''}
-                              <span>{(pack as string)?.replace(/[l]/, 'L')}</span>
-                            </span>
-                          ) : null,
-                        )}
-                      </div>
-                    </li>
-                  </>
+                  <li key={itemKey} className="flex flex-col gap-1">
+                    <span className="text-primary max-md:text-center">
+                      {t(`product.items.${itemKey}` as 'product')}
+                    </span>
+                    <div className="flex gap-2 max-[301px]:text-base font-bold text-xl text-secondary/80">
+                      {packs.map((pack, i, arr) =>
+                        pack !== 'none' ? (
+                          <span key={i}>
+                            {i > 0 && arr[i - 1] && arr[i - 1] !== 'none' ? '| ' : ''}
+                            <span>{(pack as string)?.replace(/[l]/, 'L')}</span>
+                          </span>
+                        ) : null,
+                      )}
+                    </div>
+                  </li>
                 );
               })}
             </ul>
