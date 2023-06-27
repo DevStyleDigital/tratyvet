@@ -131,7 +131,6 @@ export const ProductForm = ({ product }: { product?: Product }) => {
         { key: 'leave-in', label: t('product.leave-in.label' as 'product') },
         { key: 'cologne', label: t('product.cologne.label' as 'product') },
         { key: 'conditioner', label: t('product.conditioner.label' as 'product') },
-        { key: 'conditioner', label: t('product.conditioner.label' as 'product') },
         { key: 'detangler', label: t('product.detangler.label' as 'product') },
         { key: 'ceruminolytic', label: t('product.ceruminolytic.label' as 'product') },
       ].map((item) => (
