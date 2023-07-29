@@ -1,0 +1,11 @@
+[
+  "<div id=\"content\">",
+    "<div id=\"siteNotice\"></div>",
+    "<h1 id=\"firstHeading\" class=\"map_info-title\">{shop}</h1>",
+    "<h2 id=\"firstHeading\" class=\"map_info-subtitle\">{distributor}</h2>",
+    "<div id=\"bodyContent\">",
+      "<p class=\"map_info-contact\"><span>{phone}</span><span>{email}</span></p>",
+      "<p class=\"map_info-locale\">{locale} | <span>{postal_code}</span></p>",
+    "</div>",
+  "</div>"
+]

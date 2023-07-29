@@ -32,6 +32,22 @@ hr {
   @apply max-w-6xl h-px mx-auto w-[70%] bg-secondary bg-opacity-20 rounded-full mt-20 mb-10
 }
 
+.map_info-subtitle {
+  @apply text-text mb-4 text-xl italic
+}
+.map_info-title {
+  @apply text-text text-2xl font-extrabold
+}
+.map_info-contact {
+  @apply flex flex-col text-lg
+}
+.map_info-locale {
+  @apply text-lg
+}
+.map_info-locale span:last-child {
+  @apply font-extrabold
+}
+
 .flex-desk {
   @apply max-md:flex-col flex items-center gap-4 w-full justify-between
 }

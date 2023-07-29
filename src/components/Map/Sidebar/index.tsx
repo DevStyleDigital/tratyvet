@@ -80,7 +80,7 @@ export const Sidebar = ({
             !hasError &&
             LOCATES.filter((locateInfo, i) =>
               markerIds.length ? markerIds.includes(locateInfo.id) : i <= 300,
-            ).map(({ imageUrl, desc, id, locale, postalCode, ...coordinates }) => (
+            ).map(({ imageUrl, desc, id, locale, postalCode, city, ...coordinates }) => (
               <div
                 className="flex flex-col mb-4 group overflow-hidden gap-2 shadow-md select-none cursor-pointer bg-gray-200 rounded-lg transition"
                 key={id}
@@ -109,7 +109,7 @@ export const Sidebar = ({
                   dangerouslySetInnerHTML={{ __html: desc.replaceAll(',', '<br />') }}
                 />
                 <div className="flex flex-col items-end px-2 gap-1 pb-4 text-xs">
-                  <span>{locale}</span>
+                  <span>{locale.replace('{city}', city)}</span>
                   <span className="bg-gray-300 w-fit p-1 px-4 rounded-full">
                     {postalCode}
                   </span>

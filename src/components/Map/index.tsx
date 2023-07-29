@@ -3,6 +3,7 @@ import { Wrapper } from '@googlemaps/react-wrapper';
 import React, { useEffect, useRef, useState } from 'react';
 import locatesInfo from '@root/locates-info.json';
 import { Sidebar } from './Sidebar';
+import mapInfo from '../../assets/html/map-info.json';
 
 function getDistance(lat1: number, lon1: number, lat2: number, lon2: number) {
   const R = 6371; // Raio médio da Terra em quilômetros
@@ -22,7 +23,13 @@ function getDistance(lat1: number, lon1: number, lat2: number, lon2: number) {
 function findNearestCoordinate(
   lat: number,
   lon: number,
-  coordinatesArray: { lat: number; lon: number; id: string }[],
+  coordinatesArray: {
+    lat: number;
+    lon: number;
+    id: string;
+    city: string;
+    locale: string;
+  }[],
 ) {
   let nearestCoordinate;
   let nearestDistance = Infinity;
@@ -38,8 +45,6 @@ function findNearestCoordinate(
 
   return nearestCoordinate;
 }
-
-const coordinatesArray = locatesInfo.map(({ id, lat, lon }) => ({ id, lat, lon }));
 
 interface MapCompProps {
   latitude: number;
@@ -62,16 +67,38 @@ const MapComp = ({
         zoomControl: true,
         panControl: true,
         center: {
-          lat: coordinatesArray[0].lat - 20,
-          lng: coordinatesArray[0].lon,
+          lat: locatesInfo[0].lat - 20,
+          lng: locatesInfo[0].lon,
         },
         zoom: 3,
       });
 
-      coordinatesArray.forEach((coordinate) => {
-        new google.maps.Marker({
+      locatesInfo.forEach((coordinate) => {
+        const [shop, distributor, phone, email] = coordinate.desc.split(',');
+        const contentString = mapInfo
+          .join('')
+          .replace('{shop}', shop)
+          .replace('{distributor}', distributor)
+          .replace('{phone}', phone)
+          .replace('{email}', email)
+          .replace('{locale}', coordinate.locale.replace('{city}', coordinate.city))
+          .replace('{postal_code}', coordinate.postalCode);
+
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          ariaLabel: coordinate.locale.replace('{city}', coordinate.city),
+        });
+
+        const marker = new google.maps.Marker({
           position: { lat: coordinate.lat, lng: coordinate.lon },
           map: googleMap,
+        });
+
+        marker.addListener('click', () => {
+          infowindow.open({
+            anchor: marker,
+            map,
+          });
         });
       });
 
@@ -81,17 +108,22 @@ const MapComp = ({
 
   useEffect(() => {
     if (!map) return;
-    const nearestCoordinate = findNearestCoordinate(
-      latitude,
-      longitude,
-      coordinatesArray,
-    );
-    if (nearestCoordinate) {
-      map.setCenter({ lat: nearestCoordinate.lat, lng: nearestCoordinate.lon });
-      map.setZoom(15);
+    const nearestCoordinate = findNearestCoordinate(latitude, longitude, locatesInfo);
+    if (!nearestCoordinate) return;
 
-      setMarkerIds([nearestCoordinate.id]);
-    }
+    console.log(nearestCoordinate);
+
+    map.setCenter({ lat: nearestCoordinate.lat, lng: nearestCoordinate.lon });
+    map.setZoom(15);
+
+    setMarkerIds(
+      locatesInfo
+        .filter(
+          ({ city, locale }) =>
+            city === nearestCoordinate.city && locale === nearestCoordinate.locale,
+        )
+        .map(({ id }) => id),
+    );
   }, [latitude, longitude]);
 
   return <div ref={ref} className="w-full h-full relative" />;

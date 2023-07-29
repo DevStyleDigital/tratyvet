@@ -10,7 +10,7 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse) 
 
       if (!email || !user_name || !phone || !message) throw '';
       const htmlTemplate = await readFile(
-        join(process.cwd(), 'src/assets/mail', 'mail.html'),
+        join(process.cwd(), 'src/assets/html', 'mail.html'),
         'utf-8',
       );
 
