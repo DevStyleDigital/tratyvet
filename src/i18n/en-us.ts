@@ -219,4 +219,8 @@ export const enUS: typeof ptBR = {
     'en-us': 'United States',
     'es-es': 'Spain',
   },
+  countries: {
+    BR: 'Brazil',
+    UY: 'Uruguay',
+  },
 };

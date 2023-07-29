@@ -13,12 +13,15 @@ export const CountrySelector = ({
 }: {
   onChange: (country: Country | null) => void;
 }) => {
-  const { t } = useLang('distributor');
+  const { t } = useLang();
   const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
 
   const handleCountryChange = (code: string) => {
-    const country = countries.find((c) => c.code === code) || null;
-    setSelectedCountry(country);
+    const country = countries.find((c) => c === code) || null;
+    setSelectedCountry({
+      code: country!,
+      name: t(`countries.${country}` as 'countries'),
+    });
   };
 
   useEffect(() => {
@@ -29,13 +32,13 @@ export const CountrySelector = ({
     <div className="md:max-w-[13rem] w-full h-full">
       <Select
         required
-        placeholder={t('hero.select')}
+        placeholder={t('distributor.hero.select')}
         className="input-white h-[4.25rem] [&>span:nth-child(1)]:w-full md:[&>span:nth-child(1)]:max-w-[10rem] items-center [&_span]:text-text !bg-white !pl-4 w-full"
         onValueChange={handleCountryChange}
       >
         {countries.map((country) => (
-          <Select.Option key={country.code} value={country.code}>
-            {country.name}
+          <Select.Option key={country} value={country}>
+            {t(`countries.${country}` as 'countries')}
           </Select.Option>
         ))}
       </Select>

@@ -217,4 +217,8 @@ export const ptBR = {
     'en-us': 'Estados Unidos',
     'es-es': 'Espanha',
   },
+  countries: {
+    BR: 'Brasil',
+    UY: 'Uruguai',
+  },
 };
