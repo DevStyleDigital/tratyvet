@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { shuffle } from 'utils/shuffle';
 
-const LOCATES = shuffle(locatesInfo);
+const LOCATES = shuffle(locatesInfo) as typeof locatesInfo;
 
 export const Sidebar = ({
   setPostalCodeSubmitted,
@@ -80,18 +80,18 @@ export const Sidebar = ({
             !hasError &&
             LOCATES.filter((locateInfo, i) =>
               markerIds.length ? markerIds.includes(locateInfo.id) : i <= 300,
-            ).map(({ imageUrl, desc, id, locale, postalCode, city, ...coordinates }) => (
+            ).map((locale) => (
               <div
                 className="flex flex-col mb-4 group overflow-hidden gap-2 shadow-md select-none cursor-pointer bg-gray-200 rounded-lg transition"
-                key={id}
+                key={locale.id}
                 onClick={() => {
-                  setLatitude(coordinates.lat);
-                  setLongitude(coordinates.lon);
-                  setPostalCodeSubmitted(postalCode);
-                  setMarkerIds([id]);
+                  setLatitude(locale.lat);
+                  setLongitude(locale.lng);
+                  setPostalCodeSubmitted(locale.postalCode);
+                  setMarkerIds([locale.id]);
                 }}
               >
-                {imageUrl?.length ? (
+                {/* {imageUrl?.length ? (
                   <div className="w-full min-h-[8rem] block overflow-hidden">
                     <Image
                       alt=""
@@ -102,16 +102,20 @@ export const Sidebar = ({
                     />
                   </div>
                 ) : (
-                  <></>
-                )}
+                  <></>locale
+                )} */}
                 <span
                   className="break-all px-2 text-sm pt-4"
-                  dangerouslySetInnerHTML={{ __html: desc.replaceAll(',', '<br />') }}
+                  dangerouslySetInnerHTML={{
+                    __html: `${locale.company || ''}<br />${locale.distributor}<br />${
+                      locale.phone
+                    }<br />${locale.email}`,
+                  }}
                 />
                 <div className="flex flex-col items-end px-2 gap-1 pb-4 text-xs">
-                  <span>{locale.replace('{city}', city)}</span>
+                  <span>{`${locale.city}, ${locale.state}, ${locale.country}`}</span>
                   <span className="bg-gray-300 w-fit p-1 px-4 rounded-full">
-                    {postalCode}
+                    {locale.postalCode}
                   </span>
                 </div>
               </div>

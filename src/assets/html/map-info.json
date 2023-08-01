@@ -1,5 +1,5 @@
 [
-  "<div id=\"content\">",
+  "<div id=\"content\" class=\"map_info-container\">",
     "<div id=\"siteNotice\"></div>",
     "<h1 id=\"firstHeading\" class=\"map_info-title\">{shop}</h1>",
     "<h2 id=\"firstHeading\" class=\"map_info-subtitle\">{distributor}</h2>",

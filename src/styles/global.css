@@ -32,6 +32,9 @@ hr {
   @apply max-w-6xl h-px mx-auto w-[70%] bg-secondary bg-opacity-20 rounded-full mt-20 mb-10
 }
 
+.gm-style-iw {
+  @apply max-[480px]:!max-w-[360px] max-[390px]:!max-w-[300px]
+}
 .map_info-subtitle {
   @apply text-text mb-4 text-xl italic
 }
@@ -39,7 +42,10 @@ hr {
   @apply text-text text-2xl font-extrabold
 }
 .map_info-contact {
-  @apply flex flex-col text-lg
+  @apply flex flex-col text-lg mb-4
+}
+.map_info-contact span:last-child {
+  @apply break-all
 }
 .map_info-locale {
   @apply text-lg

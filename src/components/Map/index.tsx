@@ -22,13 +22,13 @@ function getDistance(lat1: number, lon1: number, lat2: number, lon2: number) {
 
 function findNearestCoordinate(
   lat: number,
-  lon: number,
+  lng: number,
   coordinatesArray: {
     lat: number;
-    lon: number;
+    lng: number;
     id: string;
     city: string;
-    locale: string;
+    state: string;
   }[],
 ) {
   let nearestCoordinate;
@@ -36,7 +36,7 @@ function findNearestCoordinate(
 
   for (let i = 0; i < coordinatesArray.length; i++) {
     const currentCoordinate = coordinatesArray[i];
-    const distance = getDistance(lat, lon, currentCoordinate.lat, currentCoordinate.lon);
+    const distance = getDistance(lat, lng, currentCoordinate.lat, currentCoordinate.lng);
     if (distance < nearestDistance) {
       nearestDistance = distance;
       nearestCoordinate = currentCoordinate;
@@ -68,29 +68,34 @@ const MapComp = ({
         panControl: true,
         center: {
           lat: locatesInfo[0].lat - 20,
-          lng: locatesInfo[0].lon,
+          lng: locatesInfo[0].lng,
         },
         zoom: 3,
       });
 
       locatesInfo.forEach((coordinate) => {
-        const [shop, distributor, phone, email] = coordinate.desc.split(',');
         const contentString = mapInfo
           .join('')
-          .replace('{shop}', shop)
-          .replace('{distributor}', distributor)
-          .replace('{phone}', phone)
-          .replace('{email}', email)
-          .replace('{locale}', coordinate.locale.replace('{city}', coordinate.city))
+          .replace(
+            '{shop}',
+            coordinate.company ? coordinate.company : coordinate.distributor,
+          )
+          .replace('{distributor}', coordinate.company ? coordinate.distributor : '')
+          .replace('{phone}', coordinate.phone.toString())
+          .replace('{email}', coordinate.email)
+          .replace(
+            '{locale}',
+            `${coordinate.city}, ${coordinate.state}, ${coordinate.country}`,
+          )
           .replace('{postal_code}', coordinate.postalCode);
 
         const infowindow = new google.maps.InfoWindow({
           content: contentString,
-          ariaLabel: coordinate.locale.replace('{city}', coordinate.city),
+          ariaLabel: `${coordinate.city}, ${coordinate.state}, ${coordinate.country}`,
         });
 
         const marker = new google.maps.Marker({
-          position: { lat: coordinate.lat, lng: coordinate.lon },
+          position: { lat: coordinate.lat, lng: coordinate.lng },
           map: googleMap,
         });
 
@@ -113,14 +118,14 @@ const MapComp = ({
 
     console.log(nearestCoordinate);
 
-    map.setCenter({ lat: nearestCoordinate.lat, lng: nearestCoordinate.lon });
+    map.setCenter({ lat: nearestCoordinate.lat, lng: nearestCoordinate.lng });
     map.setZoom(15);
 
     setMarkerIds(
       locatesInfo
         .filter(
-          ({ city, locale }) =>
-            city === nearestCoordinate.city && locale === nearestCoordinate.locale,
+          ({ city, state }) =>
+            city === nearestCoordinate.city && state === nearestCoordinate.state,
         )
         .map(({ id }) => id),
     );
