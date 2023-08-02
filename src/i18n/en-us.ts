@@ -162,7 +162,7 @@ export const enUS: typeof ptBR = {
         email: {
           title: 'Emails',
           0: 'atendimento@tratyvet.com.br',
-          1: 'marketing@tratyvet.com',
+          1: 'marketing@tratyvet.com.br',
         },
       },
     },

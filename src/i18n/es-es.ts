@@ -160,7 +160,7 @@ export const esES: typeof ptBR = {
         email: {
           title: 'Correos electrónicos',
           0: 'atendimento@tratyvet.com.br',
-          1: 'marketing@tratyvet.com',
+          1: 'marketing@tratyvet.com.br',
         },
       },
     },
