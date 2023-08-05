@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Wrapper } from '@googlemaps/react-wrapper';
 import React, { useEffect, useRef, useState } from 'react';
-import locatesInfo from '@root/locates-info.json';
+import locatesInfo from '@root/locates-info2.json';
 import { Sidebar } from './Sidebar';
 import mapInfo from '../../assets/html/map-info.json';
 

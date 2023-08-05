@@ -1,5 +1,5 @@
 import { Cross1Icon } from '@radix-ui/react-icons';
-import locatesInfo from '@root/locates-info.json';
+import locatesInfo from '@root/locates-info2.json';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
