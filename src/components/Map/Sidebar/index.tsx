@@ -85,10 +85,11 @@ export const Sidebar = ({
                 className="flex flex-col mb-4 group overflow-hidden gap-2 shadow-md select-none cursor-pointer bg-gray-200 rounded-lg transition"
                 key={locale.id}
                 onClick={() => {
+                  setPostalCodeSubmitted(locale.postalCode);
                   setLatitude(locale.lat);
                   setLongitude(locale.lng);
-                  setPostalCodeSubmitted(locale.postalCode);
-                  setMarkerIds([locale.id]);
+
+                  setTimeout(() => setMarkerIds([locale.id]), 500);
                 }}
               >
                 {/* {imageUrl?.length ? (

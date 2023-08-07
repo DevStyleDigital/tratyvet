@@ -15308,7 +15308,7 @@
   },
   {
     "postalCode": "05300-000",
-    "city": "Zona Oeste de São Paulo",
+    "city": "São Paulo",
     "state": "São Paulo",
     "company": "PET HERO DISTRIBUIDORA",
     "distributor": "ELBA",
@@ -16852,58 +16852,6 @@
     "id": "1387",
     "lat": -23.7082523,
     "lng": -46.8422385,
-    "country": "Brasil"
-  },
-  {
-    "postalCode": "01153-000",
-    "city": "São Paulo",
-    "state": "São Paulo",
-    "company": "TRATY VET",
-    "distributor": "DÉCIO",
-    "phone": "(11)95630-3077",
-    "email": "dpacheco62@hotmail.com",
-    "id": "1388",
-    "lat": -23.5320529,
-    "lng": -46.651978,
-    "country": "Brasil"
-  },
-  {
-    "postalCode": "01153-000",
-    "city": "São Paulo",
-    "state": "São Paulo",
-    "company": "TRATY VET",
-    "distributor": "DÉCIO",
-    "phone": "(11)95630-3077",
-    "email": "dpacheco62@hotmail.com",
-    "id": "1389",
-    "lat": -23.5320529,
-    "lng": -46.651978,
-    "country": "Brasil"
-  },
-  {
-    "postalCode": "01153-000",
-    "city": "São Paulo",
-    "state": "São Paulo",
-    "company": "TRATY VET",
-    "distributor": "DÉCIO",
-    "phone": "(11)95630-3077",
-    "email": "dpacheco62@hotmail.com",
-    "id": "1390",
-    "lat": -23.5320529,
-    "lng": -46.651978,
-    "country": "Brasil"
-  },
-  {
-    "postalCode": "01153-000",
-    "city": "São Paulo",
-    "state": "São Paulo",
-    "company": "TRATY VET",
-    "distributor": "DÉCIO",
-    "phone": "(11)95630-3077",
-    "email": "dpacheco62@hotmail.com",
-    "id": "1391",
-    "lat": -23.5320529,
-    "lng": -46.651978,
     "country": "Brasil"
   },
   {
@@ -18909,7 +18857,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "14450-000",
+    "postalCode": "14550-000",
     "city": "Aramina",
     "state": "São Paulo",
     "company": "TOP QUALITY DISTRIBUIDORA",
@@ -18917,8 +18865,8 @@
     "phone": "(16)99142-0947",
     "email": "enprodutospetshop@gmail.com",
     "id": "1548",
-    "lat": -23.5557714,
-    "lng": -46.6395571,
+    "lat": -20.084825874478692,
+    "lng": -47.79031559687796,
     "country": "Brasil"
   },
   {

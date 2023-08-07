@@ -116,8 +116,6 @@ const MapComp = ({
     const nearestCoordinate = findNearestCoordinate(latitude, longitude, locatesInfo);
     if (!nearestCoordinate) return;
 
-    console.log(nearestCoordinate);
-
     map.setCenter({ lat: nearestCoordinate.lat, lng: nearestCoordinate.lng });
     map.setZoom(15);
 
