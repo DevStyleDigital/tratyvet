@@ -278,4 +278,8 @@ export const enUS: typeof ptBR = {
       button: 'Submit',
     },
   },
+  countries: {
+    BR: 'Brazil',
+    UY: 'Uruguay',
+  },
 };

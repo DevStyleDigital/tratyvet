@@ -276,4 +276,8 @@ export const esES: typeof ptBR = {
       button: 'Enviar',
     },
   },
+  countries: {
+    BR: 'Brasil',
+    UY: 'Uruguay',
+  },
 };

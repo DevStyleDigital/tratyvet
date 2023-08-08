@@ -277,4 +277,8 @@ export const ptBR = {
       button: 'Enviar',
     },
   },
+  countries: {
+    BR: 'Brasil',
+    UY: 'Uruguai',
+  },
 };
