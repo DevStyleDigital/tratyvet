@@ -6,26 +6,31 @@ import { mail } from 'services/mail';
 export default async function handle(req: NextApiRequest, res: NextApiResponse) {
   try {
     if (req.method === 'POST') {
-      const { email, user_name, phone, message } = req.body;
+      const data = req.body;
 
-      if (!email || !user_name || !phone || !message) throw '';
-      const htmlTemplate = await readFile(
-        join(process.cwd(), 'src/assets/html', 'mail.html'),
+      if (!Object.values(data).length) throw '';
+      let htmlTemplate = await readFile(
+        join(
+          process.cwd(),
+          'src/assets/mail',
+          data.mail_template ? `${data.mail_template}.html` : 'mail.html',
+        ),
         'utf-8',
       );
 
-      const replacedHTML = htmlTemplate
-        .replaceAll('{{EMAIL}}', email)
-        .replaceAll('{{USER_NAME}}', user_name)
-        .replaceAll('{{PHONE}}', phone)
-        .replaceAll('{{MESSAGE}}', message);
+      Object.entries(data).forEach(([key, value]) => {
+        htmlTemplate = htmlTemplate.replaceAll(
+          `{{${key.toUpperCase()}}}`,
+          value as string,
+        );
+      });
 
       await mail.transporter.sendMail({
-        to: 'marketing@tratyvet.com.br',
+        to: 'guilhermebrogio.ps@gmail.com',
         from: { name: 'Message from Website', address: process.env.MAIL! },
-        replyTo: email,
+        replyTo: data.email,
         subject: 'Tratyvet Website',
-        html: replacedHTML,
+        html: htmlTemplate,
       });
       return res.status(200).end('Sended');
     } else {

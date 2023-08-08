@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-export const Title: BTypes.FC<{ subtitle: string; size?: 'large' | 'small' }> = ({
+export const Title: BTypes.FC<{ subtitle?: string; size?: 'large' | 'small' }> = ({
   subtitle,
   children,
   size = 'small',

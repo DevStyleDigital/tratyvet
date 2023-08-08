@@ -8,6 +8,7 @@ type SelectProps = {
   required?: boolean;
   placeholder: string;
   defaultValue?: string;
+  value?: string;
   onValueChange: (value: string) => void;
 };
 type SelectOptionProps = BTypes.FC<{ value: string }, {}, false>;
@@ -18,6 +19,7 @@ export const Select: BTypes.FC<SelectProps, {}, false> & {
   children,
   placeholder,
   label,
+  value,
   className,
   defaultValue,
   onValueChange,
@@ -29,6 +31,7 @@ export const Select: BTypes.FC<SelectProps, {}, false> & {
     <div className="relative w-full h-full [&_button]:h-full [&_button]:w-full [&>div]:w-full [&>div]:!absolute [&>div]:left-0">
       <SelectRadix.Root
         {...props}
+        value={value}
         defaultValue={defaultValue}
         onValueChange={onValueChange}
       >

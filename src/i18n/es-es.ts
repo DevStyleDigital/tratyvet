@@ -4,6 +4,7 @@ export const esES: typeof ptBR = {
   logoAlt: 'TRATY VET - logotipo vectorizado',
 
   header: {
+    'toggle-navigation': 'Abrir/cerrar menú de navegación',
     links: {
       home: 'Inicio',
       products: {
@@ -15,6 +16,7 @@ export const esES: typeof ptBR = {
         deepClear: 'Limpieza Profunda',
       },
       distributor: 'Distribuidor',
+      'becomes-distributor': 'Conviértete en Distribuidor',
       news: 'Novedades',
       about: 'Acerca de',
     },
@@ -216,8 +218,62 @@ export const esES: typeof ptBR = {
     'en-us': 'Estados Unidos',
     'es-es': 'España',
   },
-  countries: {
-    BR: 'Brasil',
-    UY: 'Uruguay',
+
+  becomes_distributor: {
+    subtitle: 'TratyVet',
+    title: 'Conviértete en un Distribuidor',
+    email: {
+      success: 'Tu correo electrónico ha sido enviado. ¡Buena suerte!',
+      error: 'Oops... algo salió mal',
+    },
+    form: {
+      full_name: {
+        label: 'Tu nombre completo',
+        placeholder: 'ej. Juan Pérez',
+      },
+      birth_date: {
+        label: 'Fecha de nacimiento',
+        placeholder: 'ej. 01/01/2000',
+      },
+      email: {
+        label: 'Tu mejor correo electrónico',
+        placeholder: 'ej. juanperez@dominio.com',
+      },
+      phone: {
+        label: 'Número de teléfono para contactar (WhatsApp/Móvil)',
+        placeholder: 'ej. +34 91111-1111',
+      },
+      city: {
+        label: 'Tu ciudad',
+        placeholder: 'ej. São Paulo',
+      },
+      state: {
+        label: 'Tu provincia',
+        placeholder: 'ej. São Paulo',
+      },
+      profession: {
+        label: 'Tu profesión',
+        placeholder: 'ej. Autónomo',
+      },
+      have_partners: {
+        label: '¿Tendrás socios?',
+        placeholder: 'Selecciona una opción',
+        options: {
+          '0': 'Sí',
+          '1': 'No',
+        },
+      },
+      about: {
+        label:
+          'Queremos conocerte mejor. Cuéntanos sobre tus experiencias profesionales.',
+        placeholder: '...',
+      },
+      expectations: {
+        label:
+          '¿Qué fue lo que más llamó tu atención de nuestro negocio? ¿Cuáles son tus expectativas?',
+        placeholder: '...',
+      },
+      button: 'Enviar',
+    },
   },
 };

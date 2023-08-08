@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Wrapper } from '@googlemaps/react-wrapper';
 import React, { useEffect, useRef, useState } from 'react';
-import locatesInfo from '@root/locates-info2.json';
+import locatesInfo from '@root/locates-info.json';
 import { Sidebar } from './Sidebar';
-import mapInfo from '../../assets/html/map-info.json';
+import mapInfo from '../../assets/mail/map-info.json';
 
 function getDistance(lat1: number, lon1: number, lat2: number, lon2: number) {
   const R = 6371; // Raio médio da Terra em quilômetros

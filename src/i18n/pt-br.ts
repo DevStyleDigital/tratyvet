@@ -2,6 +2,7 @@ export const ptBR = {
   logoAlt: 'TRATY VET - logo vetorizado',
 
   header: {
+    'toggle-navigation': 'Abrir/fechar menu navegação',
     links: {
       home: 'Início',
       products: {
@@ -13,6 +14,7 @@ export const ptBR = {
         deepClear: 'Deep Clear',
       },
       distributor: 'Distribuidor',
+      'becomes-distributor': 'Quero ser um distribuidor',
       news: 'Novidades',
       about: 'Sobre',
     },
@@ -217,8 +219,62 @@ export const ptBR = {
     'en-us': 'Estados Unidos',
     'es-es': 'Espanha',
   },
-  countries: {
-    BR: 'Brasil',
-    UY: 'Uruguai',
+
+  becomes_distributor: {
+    subtitle: 'TratyVet',
+    title: 'Quero ser um distribuidor',
+    email: {
+      success: 'Seu email foi enviado. Boa sorte!',
+      error: 'Ops... algo aconteceu!',
+    },
+
+    form: {
+      full_name: {
+        label: 'Seu nome completo',
+        placeholder: 'ex. Jhon Doe',
+      },
+      birth_date: {
+        label: 'Data de nascimento',
+        placeholder: 'ex. 01/01/2000',
+      },
+      email: {
+        label: 'Seu melhor e-mail',
+        placeholder: 'ex. jhondoe@domain.com',
+      },
+      phone: {
+        label: 'Telefone para contato (WhatsApp/Celular)',
+        placeholder: 'ex. (11) 91111-1111',
+      },
+      city: {
+        label: 'Sua cidade',
+        placeholder: 'ex. São Paulo',
+      },
+      state: {
+        label: 'Seu estado',
+        placeholder: 'ex. São Paulo',
+      },
+      profession: {
+        label: 'Sua profissão',
+        placeholder: 'ex. Autônomo',
+      },
+      have_partners: {
+        label: 'Terá sócios?',
+        placeholder: 'Selecione uma opção',
+        options: {
+          '0': 'Sim',
+          '1': 'Não',
+        },
+      },
+      about: {
+        label: 'Queremos te conhecer melhor. Fale sobre suas experiências profissionais',
+        placeholder: '...',
+      },
+      expectations: {
+        label:
+          'O que mais chamou sua atenção em nosso negócio? Quais são suas expectativas?',
+        placeholder: '...',
+      },
+      button: 'Enviar',
+    },
   },
 };

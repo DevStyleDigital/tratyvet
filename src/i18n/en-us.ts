@@ -4,6 +4,7 @@ export const enUS: typeof ptBR = {
   logoAlt: 'TRATY VET - vectorized logo',
 
   header: {
+    'toggle-navigation': 'Open/close navigation menu',
     links: {
       home: 'Home',
       products: {
@@ -15,6 +16,7 @@ export const enUS: typeof ptBR = {
         deepClear: 'Deep Clear',
       },
       distributor: 'Distributor',
+      'becomes-distributor': 'Becomes a Distributor',
       news: 'News',
       about: 'About',
     },
@@ -219,8 +221,61 @@ export const enUS: typeof ptBR = {
     'en-us': 'United States',
     'es-es': 'Spain',
   },
-  countries: {
-    BR: 'Brazil',
-    UY: 'Uruguay',
+  becomes_distributor: {
+    subtitle: 'TratyVet',
+    title: 'Become a Distributor',
+    email: {
+      success: 'Your email has been sent. Good luck!',
+      error: 'Oops... something went wrong!',
+    },
+    form: {
+      full_name: {
+        label: 'Your full name',
+        placeholder: 'e.g. John Doe',
+      },
+      birth_date: {
+        label: 'Date of birth',
+        placeholder: 'e.g. 01/01/2000',
+      },
+      email: {
+        label: 'Your best email',
+        placeholder: 'e.g. johndoe@domain.com',
+      },
+      phone: {
+        label: 'Phone number for contact (WhatsApp/Mobile)',
+        placeholder: 'e.g. (11) 91111-1111',
+      },
+      city: {
+        label: 'Your city',
+        placeholder: 'e.g. São Paulo',
+      },
+      state: {
+        label: 'Your state',
+        placeholder: 'e.g. São Paulo',
+      },
+      profession: {
+        label: 'Your profession',
+        placeholder: 'e.g. Freelancer',
+      },
+      have_partners: {
+        label: 'Will you have partners?',
+        placeholder: 'Select an option',
+        options: {
+          '0': 'Yes',
+          '1': 'No',
+        },
+      },
+      about: {
+        label:
+          'We want to get to know you better. Tell us about your professional experiences.',
+        placeholder: '...',
+      },
+      expectations: {
+        label:
+          'What caught your attention the most about our business? What are your expectations?',
+        placeholder: '...',
+      },
+      button: 'Submit',
+    },
   },
 };
