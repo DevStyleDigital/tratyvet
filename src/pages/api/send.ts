@@ -26,7 +26,7 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse) 
       });
 
       await mail.transporter.sendMail({
-        to: 'guilhermebrogio.ps@gmail.com',
+        to: 'marketing@tratyvet.com.br',
         from: { name: 'Message from Website', address: process.env.MAIL! },
         replyTo: data.email,
         subject: 'Tratyvet Website',
