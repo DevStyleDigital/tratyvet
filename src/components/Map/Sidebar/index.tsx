@@ -114,7 +114,9 @@ export const Sidebar = ({
                   }}
                 />
                 <div className="flex flex-col items-end px-2 gap-1 pb-4 text-xs">
-                  <span>{`${locale.city}, ${locale.state}, ${locale.country}`}</span>
+                  <span>{`${locale.region ? `${locale.region} ` : ''}${locale.city}, ${
+                    locale.state
+                  }, ${locale.country}`}</span>
                   <span className="bg-gray-300 w-fit p-1 px-4 rounded-full">
                     {locale.postalCode}
                   </span>
