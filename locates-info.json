@@ -65,7 +65,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57650-000",
+    "postalCode": "57680-000",
     "city": "Boca da Mata",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -78,7 +78,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57665-000",
+    "postalCode": "57325-000",
     "city": "Coité do Nóia",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -104,7 +104,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57360-000",
+    "postalCode": "57320-000",
     "city": "Craíbas",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -143,7 +143,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57685-000",
+    "postalCode": "57625-000",
     "city": "Estrela de Alagoas",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -182,7 +182,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57320-000",
+    "postalCode": "57360-000",
     "city": "Girau do Ponciano",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -221,7 +221,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57910-000",
+    "postalCode": "57425-000",
     "city": "Jaramataia",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -260,7 +260,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57610-000",
+    "postalCode": "57330-000",
     "city": "Lagoa da Canoa",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -273,7 +273,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57530-000",
+    "postalCode": "57580-000",
     "city": "Major Izidoro",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -286,7 +286,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57450-000",
+    "postalCode": "57540-000",
     "city": "Mata Grande",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -299,7 +299,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57380-000",
+    "postalCode": "57990-000",
     "city": "Messias",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -312,7 +312,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57350-000",
+    "postalCode": "57615-000",
     "city": "Minador do Negrão",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -325,7 +325,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57940-000",
+    "postalCode": "57935-000",
     "city": "Paripueira",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -338,7 +338,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57990-000",
+    "postalCode": "57210-000",
     "city": "Piaçabuçu",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -351,7 +351,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57330-000",
+    "postalCode": "57510-000",
     "city": "Poço das Trincheiras",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -377,7 +377,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57470-000",
+    "postalCode": "57750-000",
     "city": "Quebrangulo",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -416,7 +416,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57645-000",
+    "postalCode": "57860-000",
     "city": "São José da Laje",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -429,7 +429,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57570-000",
+    "postalCode": "57240-000",
     "city": "São Miguel dos Campos",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -442,7 +442,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57280-000",
+    "postalCode": "57515-000",
     "city": "Senador Rui Palmeira",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -455,7 +455,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "57675-000",
+    "postalCode": "57635-000",
     "city": "Tanque d'Arca",
     "state": "Alagoas",
     "company": "VALENTIM DISTRIBUIDORA",
@@ -572,7 +572,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "-",
+    "postalCode": "69000-000",
     "city": "Manaus",
     "state": "Amazonas",
     "company": "PRECIOSO DISTRIBUIDORA",
@@ -580,8 +580,8 @@
     "phone": "(92)98132-7475",
     "email": "ajsoliveira@hotmail.com",
     "id": "45",
-    "lat": -3.1190275,
-    "lng": -60.0217314,
+    "lat": -3.0148391,
+    "lng": -59.9309159,
     "country": "Brasil"
   },
   {
@@ -793,7 +793,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "45673-000",
+    "postalCode": "45695-000",
     "city": "Arataca",
     "state": "Bahia",
     "company": "BICHO SAPECA DISTRIBUIDORA",
@@ -806,7 +806,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "45674-000",
+    "postalCode": "45675-000",
     "city": "Aurelino Leal",
     "state": "Bahia",
     "company": "BICHO SAPECA DISTRIBUIDORA",
@@ -819,7 +819,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "45685-000",
+    "postalCode": "45625-000",
     "city": "Barro Preto",
     "state": "Bahia",
     "company": "BICHO SAPECA DISTRIBUIDORA",
@@ -871,7 +871,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "45635-000",
+    "postalCode": "45740-000",
     "city": "Floresta Azul",
     "state": "Bahia",
     "company": "BICHO SAPECA DISTRIBUIDORA",
@@ -910,7 +910,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "45627-000",
+    "postalCode": "45645-000",
     "city": "Itapitanga",
     "state": "Bahia",
     "company": "BICHO SAPECA DISTRIBUIDORA",
@@ -936,7 +936,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "45775-000",
+    "postalCode": "45620-000",
     "city": "São José da Vitória",
     "state": "Bahia",
     "company": "BICHO SAPECA DISTRIBUIDORA",
@@ -988,7 +988,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "45847-000",
+    "postalCode": "45848-000",
     "city": "Itabela",
     "state": "Bahia",
     "company": "BICHO SAPECA DISTRIBUIDORA",
@@ -1014,7 +1014,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "45950-000",
+    "postalCode": "45970-000",
     "city": "Itanhém",
     "state": "Bahia",
     "company": "BICHO SAPECA DISTRIBUIDORA",
@@ -1027,7 +1027,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "45835-000",
+    "postalCode": "45855-000",
     "city": "Itapebi",
     "state": "Bahia",
     "company": "BICHO SAPECA DISTRIBUIDORA",
@@ -1222,7 +1222,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "63000-000",
+    "postalCode": "63260-000",
     "city": "Juazeiro do Norte",
     "state": "Ceará",
     "company": "DISTRIBUIDORA DANDARA",
@@ -1287,7 +1287,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "63280-000",
+    "postalCode": "63270-000",
     "city": "Porteiras",
     "state": "Ceará",
     "company": "DISTRIBUIDORA DANDARA",
@@ -1352,7 +1352,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "63690-000",
+    "postalCode": "63650-000",
     "city": "Quiterianópolis",
     "state": "Ceará",
     "company": "DISTRIBUIDORA DANDARA",
@@ -1391,7 +1391,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "63575-000",
+    "postalCode": "63595-000",
     "city": "Catarina",
     "state": "Ceará",
     "company": "DISTRIBUIDORA DANDARA",
@@ -1675,7 +1675,7 @@
     "lng": -41.260776
   },
   {
-    "postalCode": "29545-000",
+    "postalCode": "29590-000",
     "city": "Divino de São Lourenço",
     "state": "Espírito Santo",
     "company": "GIGA VET",
@@ -1735,7 +1735,7 @@
     "lng": -40.4066664
   },
   {
-    "postalCode": "29740-000",
+    "postalCode": "29720-000",
     "city": "Governador Lindenberg",
     "state": "Espírito Santo",
     "company": "GIGA VET",
@@ -1891,7 +1891,7 @@
     "lng": -40.4516329
   },
   {
-    "postalCode": "29675-000",
+    "postalCode": "29615-000",
     "city": "Laranja da Terra",
     "state": "Espírito Santo",
     "company": "GIGA VET",
@@ -2131,7 +2131,7 @@
     "lng": -40.5330604
   },
   {
-    "postalCode": "29790-000",
+    "postalCode": "29785-000",
     "city": "Vila Valério",
     "state": "Espírito Santo",
     "company": "GIGA VET",
@@ -2191,7 +2191,7 @@
     "lng": -40.7665315
   },
   {
-    "postalCode": "29985-000",
+    "postalCode": "29885-000",
     "city": "Ponto Belo",
     "state": "Espírito Santo",
     "company": "GIGA VET",
@@ -2409,7 +2409,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "75270-000",
+    "postalCode": "75920-000",
     "city": "Santa Helena de Goiás",
     "state": "Goiás",
     "company": "FERREIRA PET",
@@ -2422,7 +2422,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "75275-000",
+    "postalCode": "75930-000",
     "city": "Maurilândia",
     "state": "Goiás",
     "company": "FERREIRA PET",
@@ -2435,7 +2435,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "76945-000",
+    "postalCode": "75960-000",
     "city": "Acreúna",
     "state": "Goiás",
     "company": "FERREIRA PET",
@@ -2461,7 +2461,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "75570-000",
+    "postalCode": "75830-000",
     "city": "Mineiros",
     "state": "Goiás",
     "company": "FERREIRA PET",
@@ -2474,7 +2474,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "75245-000",
+    "postalCode": "75915-000",
     "city": "Montevidiu",
     "state": "Goiás",
     "company": "FERREIRA PET",
@@ -2513,7 +2513,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "78300-001",
+    "postalCode": "78300-000",
     "city": "Tangará da Serra",
     "state": "Mato Grosso",
     "company": "MT PET CARE",
@@ -2526,7 +2526,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "78890-001",
+    "postalCode": "78890-000",
     "city": "Sorriso",
     "state": "Mato Grosso",
     "company": "MT PET CARE",
@@ -2565,7 +2565,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "78600-001",
+    "postalCode": "78600-000",
     "city": "Barra do Garças",
     "state": "Mato Grosso",
     "company": "MT PET CARE",
@@ -2578,7 +2578,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "78480-000",
+    "postalCode": "78485-000",
     "city": "Acorizal",
     "state": "Mato Grosso",
     "company": "MT PET CARE",
@@ -2825,7 +2825,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "78319-000",
+    "postalCode": "78307-000",
     "city": "Campos de Júlio",
     "state": "Mato Grosso",
     "company": "MT PET CARE",
@@ -3111,7 +3111,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "78578-000",
+    "postalCode": "78573-000",
     "city": "Ipiranga do Norte",
     "state": "Mato Grosso",
     "company": "MT PET CARE",
@@ -3319,7 +3319,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "78460-000",
+    "postalCode": "78470-000",
     "city": "Nobres",
     "state": "Mato Grosso",
     "company": "MT PET CARE",
@@ -3436,7 +3436,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "78445-000",
+    "postalCode": "78440-000",
     "city": "Nova Maringá",
     "state": "Mato Grosso",
     "company": "MT PET CARE",
@@ -3839,7 +3839,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "78470-000",
+    "postalCode": "78480-000",
     "city": "Rosário Oeste",
     "state": "Mato Grosso",
     "company": "MT PET CARE",
@@ -3891,7 +3891,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "78453-000",
+    "postalCode": "78445-000",
     "city": "Santa Rita do Trivelato",
     "state": "Mato Grosso",
     "company": "MT PET CARE",
@@ -4151,7 +4151,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "78200-001",
+    "postalCode": "78200-000",
     "city": "Cáceres",
     "state": "Mato Grosso",
     "company": "MT PET CARE",
@@ -4398,7 +4398,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79740-000",
+    "postalCode": "79540-000",
     "city": "Cassilândia",
     "state": "Mato Grosso do Sul",
     "company": "NUTRIMAIS",
@@ -4424,7 +4424,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79435-000",
+    "postalCode": "79480-000",
     "city": "Rio Verde do Mato Grosso",
     "state": "Mato Grosso do Sul",
     "company": "NUTRIMAIS",
@@ -4437,7 +4437,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79620-000",
+    "postalCode": "79490-000",
     "city": "São Gabriel do Oeste",
     "state": "Mato Grosso do Sul",
     "company": "NUTRIMAIS",
@@ -4450,7 +4450,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79395-000",
+    "postalCode": "79680-000",
     "city": "Água Clara",
     "state": "Mato Grosso do Sul",
     "company": "NUTRIMAIS",
@@ -4476,7 +4476,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79965-000",
+    "postalCode": "79170-000",
     "city": "Sidrolândia",
     "state": "Mato Grosso do Sul",
     "company": "TRATO PET",
@@ -4489,7 +4489,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79280-000",
+    "postalCode": "79215-000",
     "city": "Dois Irmãos do Buriti",
     "state": "Mato Grosso do Sul",
     "company": "TRATO PET",
@@ -4502,7 +4502,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79175-000",
+    "postalCode": "79180-000",
     "city": "Ribas do Rio Pardo",
     "state": "Mato Grosso do Sul",
     "company": "TRATO PET",
@@ -4528,7 +4528,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79985-000",
+    "postalCode": "79760-000",
     "city": "Batayporã",
     "state": "Mato Grosso do Sul",
     "company": "TRATO PET",
@@ -4541,7 +4541,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79860-000",
+    "postalCode": "79730-000",
     "city": "Glória de Dourados",
     "state": "Mato Grosso do Sul",
     "company": "TRATO PET",
@@ -4567,7 +4567,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79275-000",
+    "postalCode": "79890-000",
     "city": "Itaporã",
     "state": "Mato Grosso do Sul",
     "company": "TRATO PET",
@@ -4580,7 +4580,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79950-000",
+    "postalCode": "79130-000",
     "city": "Rio Brilhante",
     "state": "Mato Grosso do Sul",
     "company": "TRATO PET",
@@ -4593,7 +4593,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79190-000",
+    "postalCode": "79140-000",
     "city": "Nova Alvorada do Sul",
     "state": "Mato Grosso do Sul",
     "company": "TRATO PET",
@@ -4619,7 +4619,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79680-000",
+    "postalCode": "79940-000",
     "city": "Caarapó",
     "state": "Mato Grosso do Sul",
     "company": "TRATO PET",
@@ -4645,7 +4645,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79230-000",
+    "postalCode": "79550-000",
     "city": "Costa Rica",
     "state": "Mato Grosso do Sul",
     "company": "NUTRIMAIS",
@@ -4658,7 +4658,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "79800-000",
+    "postalCode": "79700-000",
     "city": "Angélica",
     "state": "Mato Grosso do Sul",
     "company": "TRATO PET",
@@ -5122,7 +5122,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "Fronteira",
+    "postalCode": "38230-000",
     "city": "Fronteira",
     "state": "Minas Gerais",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -5381,7 +5381,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "39468-000",
+    "postalCode": "39445-000",
     "city": "Capitão Enéas",
     "state": "Minas Gerais",
     "company": "JOB PET",
@@ -5472,7 +5472,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "39378-000",
+    "postalCode": "39318-000",
     "city": "Icaraí de Minas",
     "state": "Minas Gerais",
     "company": "JOB PET",
@@ -5511,7 +5511,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "39375-000",
+    "postalCode": "39594-000",
     "city": "Itacambira",
     "state": "Minas Gerais",
     "company": "JOB PET",
@@ -5788,7 +5788,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "38790-000",
+    "postalCode": "38730-000",
     "city": "Guimarânia",
     "state": "Minas Gerais",
     "company": "MEROLA DISTRIBUIDORA",
@@ -5879,7 +5879,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "38155-000",
+    "postalCode": "38178-000",
     "city": "Pedrinópolis",
     "state": "Minas Gerais",
     "company": "MEROLA DISTRIBUIDORA",
@@ -5918,7 +5918,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "38515-000",
+    "postalCode": "38525-000",
     "city": "Estrela do Sul",
     "state": "Minas Gerais",
     "company": "MEROLA DISTRIBUIDORA",
@@ -6178,7 +6178,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "35885-000",
+    "postalCode": "34990-000",
     "city": "Nova União",
     "state": "Minas Gerais",
     "company": "CONPET",
@@ -6243,7 +6243,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "35475-000",
+    "postalCode": "35400-000",
     "city": "Cachoeira do Campo",
     "state": "Minas Gerais",
     "company": "CONPET",
@@ -6360,7 +6360,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "39780-000",
+    "postalCode": "39700-000",
     "city": "Peçanha",
     "state": "Minas Gerais",
     "company": "CONPET",
@@ -6646,7 +6646,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37447-000",
+    "postalCode": "37454-000",
     "city": "Seritinga",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -6698,7 +6698,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37418-000",
+    "postalCode": "37408-000",
     "city": "São Tomé das Letras",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -6815,7 +6815,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37195-000",
+    "postalCode": "37175-000",
     "city": "Ilicínea",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -6906,7 +6906,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37825-000",
+    "postalCode": "37760-000",
     "city": "Carvalhópolis",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -6932,7 +6932,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37525-000",
+    "postalCode": "37524-000",
     "city": "Natércia",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -6945,7 +6945,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37350-000",
+    "postalCode": "37490-000",
     "city": "São Gonçalo do Sapucaí",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -6958,7 +6958,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37557-000",
+    "postalCode": "37550-000",
     "city": "Ipuiúna",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -6984,7 +6984,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37645-000",
+    "postalCode": "37548-000",
     "city": "Conceição dos Ouros",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -6997,7 +6997,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37543-000",
+    "postalCode": "37545-000",
     "city": "Cachoeira de Minas",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -7114,7 +7114,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37747-000",
+    "postalCode": "37567-000",
     "city": "São Sebastião da Bela Vista",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -7127,7 +7127,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37815-000",
+    "postalCode": "37405-000",
     "city": "Monsenhor Paulo",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -7166,7 +7166,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37380-000",
+    "postalCode": "37496-000",
     "city": "Turvolândia",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -7192,7 +7192,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37295-000",
+    "postalCode": "37235-000",
     "city": "Coqueiral",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -7231,7 +7231,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37595-000",
+    "postalCode": "37510-000",
     "city": "São José do Alegre",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -7488,7 +7488,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "37625-000",
+    "postalCode": "37542-000",
     "city": "Estiva",
     "state": "Minas Gerais",
     "company": "VW DISTRIBUIDORA",
@@ -7514,7 +7514,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "36245-000",
+    "postalCode": "36220-000",
     "city": "Antônio Carlos",
     "state": "Minas Gerais",
     "company": "CRUZ E BARRETO",
@@ -7991,7 +7991,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "87680-000",
+    "postalCode": "87810-000",
     "city": "Guaporema",
     "state": "Paraná",
     "company": "LANÇA BICHO",
@@ -8004,7 +8004,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "87527-000",
+    "postalCode": "87525-000",
     "city": "Ivaté",
     "state": "Paraná",
     "company": "LANÇA BICHO",
@@ -8043,7 +8043,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "87590-000",
+    "postalCode": "87595-000",
     "city": "Brasilândia do Sul",
     "state": "Paraná",
     "company": "LANÇA BICHO",
@@ -8082,7 +8082,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "87520-000",
+    "postalCode": "87270-000",
     "city": "Figueira do Oeste",
     "state": "Paraná",
     "company": "LANÇA BICHO",
@@ -8121,7 +8121,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "87575-000",
+    "postalCode": "87565-000",
     "city": "Cafezal do Sul",
     "state": "Paraná",
     "company": "LANÇA BICHO",
@@ -8186,7 +8186,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "87536-000",
+    "postalCode": "87538-000",
     "city": "Perobal",
     "state": "Paraná",
     "company": "LANÇA BICHO",
@@ -8290,7 +8290,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "83735-000",
+    "postalCode": "83730-000",
     "city": "Contenda",
     "state": "Paraná",
     "company": "MOHANA PET",
@@ -8563,7 +8563,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "85230-000",
+    "postalCode": "85155-000",
     "city": "Inácio Martins",
     "state": "Paraná",
     "company": "MOHANA PET",
@@ -8589,7 +8589,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "84440-000",
+    "postalCode": "84460-000",
     "city": "Ivaí",
     "state": "Paraná",
     "company": "MOHANA PET",
@@ -8615,7 +8615,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "85225-000",
+    "postalCode": "85230-000",
     "city": "Santa Maria do Oeste",
     "state": "Paraná",
     "company": "MOHANA PET",
@@ -8745,7 +8745,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "86935-000",
+    "postalCode": "86960-000",
     "city": "Barbosa Ferraz",
     "state": "Paraná",
     "company": "PETSTOCK DISTRIBUIDORA",
@@ -8797,7 +8797,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "87150-000",
+    "postalCode": "87155-000",
     "city": "Doutor Camargo",
     "state": "Paraná",
     "company": "PETSTOCK DISTRIBUIDORA",
@@ -8823,7 +8823,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "87790-000",
+    "postalCode": "87955-000",
     "city": "São Pedro do Paraná",
     "state": "Paraná",
     "company": "PETSTOCK DISTRIBUIDORA",
@@ -8862,7 +8862,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "87905-000",
+    "postalCode": "87980-000",
     "city": "Itaúna do Sul",
     "state": "Paraná",
     "company": "PETSTOCK DISTRIBUIDORA",
@@ -8875,7 +8875,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "87940-000",
+    "postalCode": "87990-000",
     "city": "Diamante do Norte",
     "state": "Paraná",
     "company": "PETSTOCK DISTRIBUIDORA",
@@ -8901,7 +8901,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "87775-000",
+    "postalCode": "87790-000",
     "city": "Nova Aliança do Ivaí",
     "state": "Paraná",
     "company": "PETSTOCK DISTRIBUIDORA",
@@ -8992,7 +8992,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "85780-000",
+    "postalCode": "85830-000",
     "city": "Formosa do Oeste",
     "state": "Paraná",
     "company": "AUTENTICA",
@@ -9109,7 +9109,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "85650-000",
+    "postalCode": "85685-000",
     "city": "Nova Prata do Iguaçu",
     "state": "Paraná",
     "company": "AUTENTICA",
@@ -9161,7 +9161,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "85128-000",
+    "postalCode": "85340-000",
     "city": "Rio Bonito do Iguaçu",
     "state": "Paraná",
     "company": "AUTENTICA",
@@ -9174,7 +9174,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "85855-000",
+    "postalCode": "85845-000",
     "city": "Vera Cruz do Oeste",
     "state": "Paraná",
     "company": "AUTENTICA",
@@ -9265,7 +9265,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "85320-000",
+    "postalCode": "85485-000",
     "city": "Três Barras do Paraná",
     "state": "Paraná",
     "company": "AUTENTICA",
@@ -9304,7 +9304,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "85455-000",
+    "postalCode": "85430-000",
     "city": "Braganey",
     "state": "Paraná",
     "company": "AUTENTICA",
@@ -9421,7 +9421,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "86470-000",
+    "postalCode": "86455-000",
     "city": "Joaquim Távora",
     "state": "Paraná",
     "company": "NIPPO PET EXPRESS",
@@ -9564,7 +9564,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "86275-000",
+    "postalCode": "86250-000",
     "city": "Nova Santa Bárbara",
     "state": "Paraná",
     "company": "NIPPO PET EXPRESS",
@@ -9577,7 +9577,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "86260-000",
+    "postalCode": "86270-000",
     "city": "São Jerônimo da Serra",
     "state": "Paraná",
     "company": "NIPPO PET EXPRESS",
@@ -9590,7 +9590,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "84380-000",
+    "postalCode": "84280-000",
     "city": "Curiúva",
     "state": "Paraná",
     "company": "NIPPO PET EXPRESS",
@@ -9603,7 +9603,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "84335-000",
+    "postalCode": "84300-000",
     "city": "Alto do Amparo",
     "state": "Paraná",
     "company": "NIPPO PET EXPRESS",
@@ -9616,7 +9616,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "86345-000",
+    "postalCode": "86455-000",
     "city": "Joaquim Távora",
     "state": "Paraná",
     "company": "NIPPO PET EXPRESS",
@@ -9746,7 +9746,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "85545-000",
+    "postalCode": "85565-000",
     "city": "Sulina",
     "state": "Paraná",
     "company": "AUTENTICA",
@@ -9863,7 +9863,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "87660-000",
+    "postalCode": "84900-000",
     "city": "Ibaritá",
     "state": "Paraná",
     "company": "LANÇA BICHO",
@@ -9980,7 +9980,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "86890-000",
+    "postalCode": "87840-000",
     "city": "Mirador",
     "state": "Paraná",
     "company": "PETSTOCK DISTRIBUIDORA",
@@ -10032,7 +10032,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "85475-000",
+    "postalCode": "85835-000",
     "city": "Jesuítas",
     "state": "Paraná",
     "company": "AUTENTICA",
@@ -10252,7 +10252,7 @@
     "lng": -52.47152759999999
   },
   {
-    "postalCode": "58215-000",
+    "postalCode": "58388-000",
     "city": "Alagoa Grande",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10264,7 +10264,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58217-000",
+    "postalCode": "58125-000",
     "city": "Alagoa Nova",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10276,7 +10276,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58219-000",
+    "postalCode": "58390-000",
     "city": "Alagoinha",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10288,7 +10288,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58222-000",
+    "postalCode": "58460-000",
     "city": "Alcantil",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10300,7 +10300,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58224-000",
+    "postalCode": "58399-000",
     "city": "Algodão de Jandaíra",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10312,7 +10312,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58226-000",
+    "postalCode": "58320-000",
     "city": "Alhandra",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10348,7 +10348,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58237-000",
+    "postalCode": "58295-000",
     "city": "Baía da Traição",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10360,7 +10360,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58239-000",
+    "postalCode": "58220-000",
     "city": "Bananeiras",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10372,7 +10372,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58241-000",
+    "postalCode": "58170-000",
     "city": "Barra de Santa Rosa",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10384,7 +10384,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58243-000",
+    "postalCode": "58458-000",
     "city": "Barra de Santana",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10396,7 +10396,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58245-000",
+    "postalCode": "58895-000",
     "city": "Belém do Brejo do Cruz",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10408,7 +10408,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58251-000",
+    "postalCode": "58960-000",
     "city": "Bonito de Santa Fé",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10420,7 +10420,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58255-000",
+    "postalCode": "58480-000",
     "city": "Cabaceiras",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10432,7 +10432,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58257-000",
+    "postalCode": "58326-000",
     "city": "Caaporã",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10444,7 +10444,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58259-000",
+    "postalCode": "58230-000",
     "city": "Cacimba de Dentro",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10480,7 +10480,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58269-000",
+    "postalCode": "58945-000",
     "city": "Carrapateira",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10492,7 +10492,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58940-000",
+    "postalCode": "58884-000",
     "city": "Catolé do Rocha",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10504,7 +10504,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58279-000",
+    "postalCode": "58322-000",
     "city": "Conde",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10516,7 +10516,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58281-000",
+    "postalCode": "58770-000",
     "city": "Coremas",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10528,7 +10528,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58283-000",
+    "postalCode": "58175-000",
     "city": "Cuité",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10540,7 +10540,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58285-000",
+    "postalCode": "58291-000",
     "city": "Curral de Cima",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10576,7 +10576,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58293-000",
+    "postalCode": "58195-000",
     "city": "Frei Martinho",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10600,7 +10600,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58297-000",
+    "postalCode": "58356-000",
     "city": "Gurinhém",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10612,7 +10612,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58299-000",
+    "postalCode": "58980-000",
     "city": "Ibiara",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10624,7 +10624,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58301-000",
+    "postalCode": "58775-000",
     "city": "Igaracy",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10636,7 +10636,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58311-000",
+    "postalCode": "58378-000",
     "city": "Itatuba",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10660,7 +10660,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58313-000",
+    "postalCode": "58387-000",
     "city": "Juarez Távora",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10672,7 +10672,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58315-000",
+    "postalCode": "58660-000",
     "city": "Juazeirinho",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10684,7 +10684,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58317-000",
+    "postalCode": "58640-000",
     "city": "Junco do Seridó",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10696,7 +10696,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58319-000",
+    "postalCode": "58117-000",
     "city": "Lagoa Seca",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10708,7 +10708,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58323-000",
+    "postalCode": "58315-000",
     "city": "Lucena",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10720,7 +10720,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58212-000",
+    "postalCode": "58778-000",
     "city": "Aguiar",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10732,7 +10732,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58277-000",
+    "postalCode": "58970-000",
     "city": "Conceição",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -10768,7 +10768,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "58321-000",
+    "postalCode": "58820-000",
     "city": "Lastro",
     "state": "Paraíba",
     "distributor": "EDILSON",
@@ -11040,7 +11040,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "95170-000",
+    "postalCode": "95180-000",
     "city": "Farroupilha",
     "state": "Rio Grande do Sul",
     "company": "CJR",
@@ -11183,7 +11183,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "95565-000",
+    "postalCode": "95552-000",
     "city": "Capivari do Sul",
     "state": "Rio Grande do Sul",
     "company": "CJR",
@@ -11235,7 +11235,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "95490-000",
+    "postalCode": "95695-000",
     "city": "Riozinho",
     "state": "Rio Grande do Sul",
     "company": "CJR",
@@ -11248,7 +11248,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "95583-000",
+    "postalCode": "95555-000",
     "city": "Capão Novo",
     "state": "Rio Grande do Sul",
     "company": "CJR",
@@ -11287,7 +11287,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "95235-000",
+    "postalCode": "95240-000",
     "city": "Ipê",
     "state": "Rio Grande do Sul",
     "company": "CJR",
@@ -11300,7 +11300,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "95175-000",
+    "postalCode": "95480-000",
     "city": "Osvaldo Kroeff",
     "state": "Rio Grande do Sul",
     "company": "CJR",
@@ -11586,7 +11586,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "95333-000",
+    "postalCode": "95334-000",
     "city": "Vila Flores",
     "state": "Rio Grande do Sul",
     "company": "CJR",
@@ -11806,7 +11806,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "97140-000",
+    "postalCode": "97450-000",
     "city": "Cacequi",
     "state": "Rio Grande do Sul",
     "company": "RAUEN DIST. PET",
@@ -11845,7 +11845,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "97660-000",
+    "postalCode": "97645-000",
     "city": "Maçambara",
     "state": "Rio Grande do Sul",
     "company": "RAUEN DIST. PET",
@@ -11858,7 +11858,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "97720-000",
+    "postalCode": "97755-000",
     "city": "Unistalda",
     "state": "Rio Grande do Sul",
     "company": "RAUEN DIST. PET",
@@ -11871,7 +11871,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "97360-000",
+    "postalCode": "97770-000",
     "city": "Nova Esperança do Sul",
     "state": "Rio Grande do Sul",
     "company": "RAUEN DIST. PET",
@@ -11884,7 +11884,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "97335-000",
+    "postalCode": "97385-000",
     "city": "Vila Nova do Sul",
     "state": "Rio Grande do Sul",
     "company": "RAUEN DIST. PET",
@@ -11936,7 +11936,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "96555-000",
+    "postalCode": "96590-000",
     "city": "Santana da Boa Vista",
     "state": "Rio Grande do Sul",
     "company": "RAUEN DIST. PET",
@@ -12170,7 +12170,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "95977-000",
+    "postalCode": "95950-000",
     "city": "Nova Bréssia",
     "state": "Rio Grande do Sul",
     "company": "RAUEN DIST. PET",
@@ -12196,7 +12196,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "95985-000",
+    "postalCode": "95915-000",
     "city": "Santa Clara do Sul",
     "state": "Rio Grande do Sul",
     "company": "RAUEN DIST. PET",
@@ -12261,7 +12261,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "96345-000",
+    "postalCode": "95967-000",
     "city": "Doutor Ricardo",
     "state": "Rio Grande do Sul",
     "company": "RAUEN DIST. PET",
@@ -12430,7 +12430,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "95547-000",
+    "postalCode": "95540-000",
     "city": "Quintão",
     "state": "Rio Grande do Sul",
     "company": "RAUEN DIST. PET",
@@ -12573,7 +12573,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98199-000",
+    "postalCode": "98230-000",
     "city": "Quinze de Novembro",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12586,7 +12586,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98140-000",
+    "postalCode": "98125-000",
     "city": "Fortaleza dos Valos",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12638,7 +12638,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98835-000",
+    "postalCode": "97950-000",
     "city": "Guarani das Missões",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12651,7 +12651,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "97845-000",
+    "postalCode": "97920-000",
     "city": "São Pedro de Butiá",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12664,7 +12664,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98945-000",
+    "postalCode": "98940-000",
     "city": "Tuparendi",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12677,7 +12677,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98730-000",
+    "postalCode": "98930-000",
     "city": "Tucunduva",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12690,7 +12690,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98975-000",
+    "postalCode": "98925-000",
     "city": "Dr. Maurício Cardoso",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12729,7 +12729,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98914-000",
+    "postalCode": "98958-000",
     "city": "São José do Inhacorá",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12755,7 +12755,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98918-500",
+    "postalCode": "98919-000",
     "city": "Nova Candelária",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12807,7 +12807,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98850-000",
+    "postalCode": "97930-000",
     "city": "Caibaté",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12846,7 +12846,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98815-000",
+    "postalCode": "98975-000",
     "city": "Campina das Missões",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12859,7 +12859,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98855-000",
+    "postalCode": "98995-000",
     "city": "Porto Xavier",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12872,7 +12872,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98925-000",
+    "postalCode": "98980-000",
     "city": "Porto Lucena",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12885,7 +12885,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "98926-000",
+    "postalCode": "98985-000",
     "city": "Porto Vera Cruz",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -12937,7 +12937,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "99670-000",
+    "postalCode": "99615-000",
     "city": "Trindade do Sul",
     "state": "Rio Grande do Sul",
     "company": "MAJU DISTRIBUIDORA",
@@ -13080,7 +13080,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "95294-000",
+    "postalCode": "95420-000",
     "city": "Juquirana",
     "state": "Rio Grande do Sul",
     "company": "CJR",
@@ -13106,7 +13106,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "97365-000",
+    "postalCode": "97390-000",
     "city": "Ibaré",
     "state": "Rio Grande do Sul",
     "company": "RAUEN DIST. PET",
@@ -13158,7 +13158,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "95938-000",
+    "postalCode": "95948-000",
     "city": "Travesseiro",
     "state": "Rio Grande do Sul",
     "company": "RAUEN DIST. PET",
@@ -13285,7 +13285,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "25795-000",
+    "postalCode": "25780-000",
     "city": "São José do Vale do Rio Preto",
     "state": "Rio de Janeiro",
     "company": "CRUZ E BARRETO",
@@ -14140,7 +14140,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "89645-000",
+    "postalCode": "89642-000",
     "city": "Tangará",
     "state": "Santa Catarina",
     "company": "MAJU DISTRIBUIDORA",
@@ -14192,7 +14192,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "89892-000",
+    "postalCode": "89845-000",
     "city": "União do Oeste",
     "state": "Santa Catarina",
     "company": "MAJU DISTRIBUIDORA",
@@ -14205,7 +14205,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "89755-000",
+    "postalCode": "89780-000",
     "city": "Xavantina",
     "state": "Santa Catarina",
     "company": "MAJU DISTRIBUIDORA",
@@ -14218,7 +14218,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "89198-000",
+    "postalCode": "89196-000",
     "city": "Salete",
     "state": "Santa Catarina",
     "company": "MAJU DISTRIBUIDORA",
@@ -14348,7 +14348,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "88875-000",
+    "postalCode": "88865-000",
     "city": "São Bento Baixo",
     "state": "Santa Catarina",
     "company": "TOK FINAL",
@@ -14361,7 +14361,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "88860-000",
+    "postalCode": "88150-000",
     "city": "Siderópolis",
     "state": "Santa Catarina",
     "company": "TOK FINAL",
@@ -14517,7 +14517,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "88775-000",
+    "postalCode": "88765-000",
     "city": "São Martinho",
     "state": "Santa Catarina",
     "company": "TOK FINAL",
@@ -15237,7 +15237,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "18580-000",
+    "postalCode": "18260-000",
     "city": "Porangaba",
     "state": "São Paulo",
     "company": "NIPPO PET EXPRESS",
@@ -15666,7 +15666,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "07400-000",
+    "postalCode": "07432-000",
     "city": "Arujá",
     "state": "São Paulo",
     "company": "FORTE LEV DISTRIBUIDORA",
@@ -15822,7 +15822,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "13270-000",
+    "postalCode": "13274-465",
     "city": "Valinhos",
     "state": "São Paulo",
     "company": "PET TRON",
@@ -15967,7 +15967,7 @@
   {
     "postalCode": "05300-000",
     "city": "São Paulo",
-    "region": "Zona Oeste de",
+    "region": "Zona Oeste de São Paulo",
     "state": "São Paulo",
     "company": "PET HERO DISTRIBUIDORA",
     "distributor": "ELBA",
@@ -15979,16 +15979,17 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "06000-000",
-    "city": "Osasco",
+    "postalCode": "05300-000",
+    "region": "Osasco",
+    "city": "São Paulo",
     "state": "São Paulo",
     "company": "PET HERO DISTRIBUIDORA",
     "distributor": "ELBA",
     "phone": "(11)97698-6662",
     "email": "tratyvet.comercial@gmail.com",
     "id": "1268",
-    "lat": -23.5326334,
-    "lng": -46.7915243,
+    "lat": -23.571944,
+    "lng": -46.700833,
     "country": "Brasil"
   },
   {
@@ -16122,7 +16123,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "14420-000",
+    "postalCode": "14415-000",
     "city": "Patrocínio Paulista",
     "state": "São Paulo",
     "company": "TOP QUALITY DISTRIBUIDORA",
@@ -16161,7 +16162,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "14480-000",
+    "postalCode": "14570-000",
     "city": "Buritizal",
     "state": "São Paulo",
     "company": "TOP QUALITY DISTRIBUIDORA",
@@ -16317,7 +16318,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "18470-000",
+    "postalCode": "18440-000",
     "city": "Itaberá",
     "state": "São Paulo",
     "company": "BETTER PET DISTRIBUIDORA",
@@ -16499,7 +16500,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "19890-000",
+    "postalCode": "18940-000",
     "city": "São Pedro do Turvo",
     "state": "São Paulo",
     "company": "BETTER PET DISTRIBUIDORA",
@@ -16921,7 +16922,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "13855-000",
+    "postalCode": "13857-000",
     "city": "Estiva Gerbi",
     "state": "São Paulo",
     "company": "FOR ALL PET DISTRIBUIDORA",
@@ -17392,10 +17393,10 @@
     "postalCode": "01153-000",
     "city": "São Paulo",
     "state": "São Paulo",
-    "company": "TRATY VET",
-    "distributor": "DÉCIO",
-    "phone": "(11)95630-3077",
-    "email": "dpacheco62@hotmail.com",
+    "company": "011 PET",
+    "distributor": "CHRISTIANO",
+    "phone": "(11)96143-5939",
+    "email": "christianofs@hotmail.com",
     "id": "1392",
     "lat": -23.5320529,
     "lng": -46.651978,
@@ -17701,7 +17702,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "15585-000",
+    "postalCode": "15570-000",
     "city": "Cardoso",
     "state": "São Paulo",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -17857,7 +17858,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "15730-000",
+    "postalCode": "15760-000",
     "city": "Urânia",
     "state": "São Paulo",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -17870,7 +17871,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "15738-000",
+    "postalCode": "15768-000",
     "city": "Santa Salete",
     "state": "São Paulo",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -17883,7 +17884,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "15708-000",
+    "postalCode": "15763-000",
     "city": "Aspásia",
     "state": "São Paulo",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -17896,7 +17897,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "15707-000",
+    "postalCode": "15770-000",
     "city": "Três Fronteiras",
     "state": "São Paulo",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -17909,7 +17910,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "15930-000",
+    "postalCode": "15920-000",
     "city": "Vista Alegre do Alto",
     "state": "São Paulo",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -17922,7 +17923,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "18750-000",
+    "postalCode": "17150-000",
     "city": "Paulistânia",
     "state": "São Paulo",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -17935,7 +17936,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "15245-000",
+    "postalCode": "15270-000",
     "city": "Macaubal",
     "state": "São Paulo",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -18000,7 +18001,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "14925-000",
+    "postalCode": "14990-000",
     "city": "Irapuã",
     "state": "São Paulo",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -18026,7 +18027,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "15205-000",
+    "postalCode": "15885-000",
     "city": "Novais",
     "state": "São Paulo",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -18039,7 +18040,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "15808-000",
+    "postalCode": "15828-000",
     "city": "Palmares Paulista",
     "state": "São Paulo",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -18481,7 +18482,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "17390-000",
+    "postalCode": "17290-000",
     "city": "Macatuba",
     "state": "São Paulo",
     "company": "DAL POZ",
@@ -18715,7 +18716,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "19845-000",
+    "postalCode": "19840-000",
     "city": "Maracaí",
     "state": "São Paulo",
     "company": "DAL POZ",
@@ -18975,7 +18976,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "17605-000",
+    "postalCode": "17920-000",
     "city": "Ouro Verde",
     "state": "São Paulo",
     "company": "DAL POZ",
@@ -19014,7 +19015,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "19750-000",
+    "postalCode": "19780-000",
     "city": "Quatá",
     "state": "São Paulo",
     "company": "DAL POZ",
@@ -19027,7 +19028,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "19670-000",
+    "postalCode": "19680-000",
     "city": "João Ramalho",
     "state": "São Paulo",
     "company": "DAL POZ",
@@ -19260,7 +19261,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "15255-000",
+    "postalCode": "15310-000",
     "city": "Magda",
     "state": "São Paulo",
     "company": "VIVA PET DISTRIBUIDORA",
@@ -19377,7 +19378,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "17650-000",
+    "postalCode": "17670-000",
     "city": "Quintana",
     "state": "São Paulo",
     "company": "DAL POZ",
@@ -19390,7 +19391,7 @@
     "country": "Brasil"
   },
   {
-    "postalCode": "19275-000",
+    "postalCode": "17960-000",
     "city": "Monte Castelo",
     "state": "São Paulo",
     "company": "DAL POZ",
@@ -19400,6 +19401,48 @@
     "id": "1563",
     "lat": -21.2981619,
     "lng": -51.5682726,
+    "country": "Brasil"
+  },
+  {
+    "postalCode": "08100-000",
+    "city": "São Paulo",
+    "region": "Zona Leste de São Paulo",
+    "state": "São Paulo",
+    "company": "011 PET",
+    "distributor": "CHRISTIANO",
+    "phone": "(11)96143-5939",
+    "email": "christianofs@hotmail.com",
+    "id": "1564",
+    "lat": -23.532393111341715,
+    "lng": -46.50440593940622,
+    "country": "Brasil"
+  },
+  {
+    "postalCode": "04000-000",
+    "city": "São Paulo",
+    "region": "Zona Sul de São Paulo",
+    "state": "São Paulo",
+    "company": "011 PET",
+    "distributor": "CHRISTIANO",
+    "phone": "(11)96143-5939",
+    "email": "christianofs@hotmail.com",
+    "id": "1565",
+    "lat": -23.653026271632942,
+    "lng": -46.66320109799161,
+    "country": "Brasil"
+  },
+  {
+    "postalCode": "02000-000",
+    "city": "São Paulo",
+    "region": "Zona Norte de São Paulo",
+    "state": "São Paulo",
+    "company": "PET TRATY",
+    "distributor": "DÉCIO",
+    "phone": "(11)95630-3077",
+    "email": "dpacheco62@hotmail.com",
+    "id": "1566",
+    "lat": -23.482307646924813,
+    "lng": -46.67662010113718,
     "country": "Brasil"
   }
 ]

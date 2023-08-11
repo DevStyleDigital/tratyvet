@@ -27,6 +27,7 @@ function findNearestCoordinate(
     lat: number;
     lng: number;
     id: string;
+    region?: string;
     city: string;
     state: string;
   }[],
@@ -85,17 +86,17 @@ const MapComp = ({
           .replace('{email}', coordinate.email)
           .replace(
             '{locale}',
-            `${coordinate.region ? `${coordinate.region} ` : ''}${coordinate.city}, ${
+            `${`${coordinate.region ? coordinate.region : coordinate.city}, ${
               coordinate.state
-            }, ${coordinate.country}`,
+            }, ${coordinate.country}`}`,
           )
           .replace('{postal_code}', coordinate.postalCode);
 
         const infowindow = new google.maps.InfoWindow({
           content: contentString,
-          ariaLabel: `${coordinate.region ? `${coordinate.region} ` : ''}${
-            coordinate.city
-          }, ${coordinate.state}, ${coordinate.country}`,
+          ariaLabel: `${`${coordinate.region ? coordinate.region : coordinate.city}, ${
+            coordinate.state
+          }, ${coordinate.country}`}`,
         });
 
         const marker = new google.maps.Marker({
@@ -125,9 +126,10 @@ const MapComp = ({
 
     setMarkerIds(
       locatesInfo
-        .filter(
-          ({ city, state }) =>
-            city === nearestCoordinate.city && state === nearestCoordinate.state,
+        .filter(({ city, region, state }) =>
+          nearestCoordinate.region
+            ? region === nearestCoordinate.region && state === nearestCoordinate.state
+            : city === nearestCoordinate.city && state === nearestCoordinate.state,
         )
         .map(({ id }) => id),
     );
