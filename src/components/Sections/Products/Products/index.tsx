@@ -17,7 +17,7 @@ export const Products = ({
 }: {
   products: Omit<Product, 'category' | 'items'>[];
 }) => {
-  const { t } = useLang('products');
+  const { t, lang } = useLang('products');
   const router = useRouter();
   const [productSelectedType, setProductSelectedType] = useState(
     (router.query.ptype as string) || 'lines',
@@ -58,7 +58,12 @@ export const Products = ({
                     <div className="flex self-start flex-col gap-4">
                       <span className="font-bold">{product.name}</span>
                       <span
-                        dangerouslySetInnerHTML={{ __html: purifyText(product.desc) }}
+                        dangerouslySetInnerHTML={{
+                          __html: purifyText(
+                            product.desc?.[lang!.toLowerCase()] ||
+                              `product.desc.${lang!.toLowerCase()}`,
+                          ),
+                        }}
                         className="[&>p]:max-h-16 [&>p]:[display:-webkit-box] text-sm [&>p]:[-webkit-line-clamp:3] [&>p]:[-webkit-box-orient:vertical] [&>p]:overflow-hidden [&>p]:text-ellipsis"
                       />
                     </div>

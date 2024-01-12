@@ -36,7 +36,11 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       },
     };
   } catch (err: any) {
-    return err;
+    return {
+      props: {
+        products: [],
+      },
+    };
   }
 };
 

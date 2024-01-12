@@ -6,7 +6,7 @@ import { purifyText } from 'services/purifyText';
 import { Product as ProductType } from 'types/product';
 
 export const Product = ({ product }: { product: ProductType }) => {
-  const { t } = useLang('products');
+  const { t, lang } = useLang('products');
   return (
     <section className="max-desk mt-10 px-4">
       <Title subtitle={product.name} size="large">
@@ -28,7 +28,14 @@ export const Product = ({ product }: { product: ProductType }) => {
 
         <div className="flex w-full flex-col justify-between h-auto">
           <div className="w-full">
-            <div dangerouslySetInnerHTML={{ __html: purifyText(product.desc) }} />
+            <div
+              dangerouslySetInnerHTML={{
+                __html: purifyText(
+                  product.desc?.[lang!.toLowerCase()] ||
+                    `product.desc.${lang!.toLowerCase()}`,
+                ),
+              }}
+            />
 
             <ul className="flex flex-wrap gap-8 justify-between max-md:justify-center mt-10">
               {Object.entries(product.items || {}).map(([itemKey, item]) => {

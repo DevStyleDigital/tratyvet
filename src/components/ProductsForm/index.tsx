@@ -10,6 +10,7 @@ import { useState } from 'react';
 import { FilePond } from 'react-filepond';
 import { http } from 'services/http';
 import { Product } from 'types/product';
+import locales from 'i18n';
 
 const optionsMl = [
   { value: 'none', label: 'None' },
@@ -29,10 +30,17 @@ export const ProductForm = ({ product }: { product?: Product }) => {
   const [files, setFiles] = useState<any[]>(
     product ? [{ source: product.imageUrl, options: { type: 'local' } }] : [],
   );
-  const [desc, setDesc] = useState<string>(product?.desc || '');
+  const [desc, setDesc] = useState(
+    product?.desc ||
+      Object.keys(locales).reduce(
+        (acc, k) => ({ ...acc, [k]: '' }),
+        {} as Record<string, string>,
+      ),
+  );
 
   const [formValues] = useState<Omit<Product, 'imageUrl' | 'id'>>({
     items: product?.items || {},
+    desc: product?.desc || {},
   } as any);
 
   async function handleSubmit() {
@@ -173,24 +181,29 @@ export const ProductForm = ({ product }: { product?: Product }) => {
         </div>
       ))}
 
-      <div className="full relative">
-        <textarea
-          className="w-px h-px top-16 left-16 [clip:rect(0px,0px,0px,0px)] absolute"
-          aria-hidden
-          tabIndex={-1}
-          required
-          value={desc}
-          onChange={() => {}}
-        />
-        <Editor
-          defaultValue={product?.desc}
-          placeholder={t('product.inputs.desc.placeholder')}
-          onChange={(htmlValue) => {
-            formValues.desc = htmlValue;
-            setDesc(htmlValue);
-          }}
-        />
-      </div>
+      {Object.keys(locales).map((k) => (
+        <div className="full relative" key={k}>
+          <span className="tracking-[0.12em] text-lg font-extrabold font-sans-secondary uppercase">
+            Descrição em {k}
+          </span>
+          <textarea
+            className="w-px h-px top-16 left-16 [clip:rect(0px,0px,0px,0px)] absolute"
+            aria-hidden
+            tabIndex={-1}
+            required
+            value={desc[k]}
+            onChange={() => {}}
+          />
+          <Editor
+            defaultValue={product?.desc[k]}
+            placeholder={t('product.inputs.desc.placeholder')}
+            onChange={(htmlValue) => {
+              formValues.desc = { ...formValues.desc, [k]: htmlValue };
+              setDesc((prev) => ({ ...prev, [k]: htmlValue }));
+            }}
+          />
+        </div>
+      ))}
 
       <div className="flex-desk">
         <div className="w-full">
