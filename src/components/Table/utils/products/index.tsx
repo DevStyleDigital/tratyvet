@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { GridColDef } from '@mui/x-data-grid';
 import { TableActions } from 'components/Table/TableActions';
+import { useLang } from 'hooks/use-lang';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { http } from 'services/http';
@@ -9,7 +10,20 @@ export const productsColumn: (
   productsColumn: React.Dispatch<React.SetStateAction<any[]>>,
 ) => GridColDef[] = (setProductsColumn) => [
   { field: 'id', headerName: 'ID', width: 90, editable: false },
-  { field: 'name', headerName: 'Product Name', width: 150, editable: false },
+  {
+    field: 'name["pt-br"]',
+    renderCell: (params) => {
+      const { lang } = useLang();
+      return (
+        <span>
+          {params.row.name[lang!.toLowerCase()] || `product.name.${lang!.toLowerCase()}`}
+        </span>
+      );
+    },
+    headerName: 'Product Name',
+    width: 150,
+    editable: false,
+  },
   { field: 'type', headerName: 'Type', width: 90, editable: false },
   { field: 'category', headerName: 'Category', width: 90, editable: false },
   {

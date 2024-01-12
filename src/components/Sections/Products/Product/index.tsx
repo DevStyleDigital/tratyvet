@@ -9,7 +9,12 @@ export const Product = ({ product }: { product: ProductType }) => {
   const { t, lang } = useLang('products');
   return (
     <section className="max-desk mt-10 px-4">
-      <Title subtitle={product.name} size="large">
+      <Title
+        subtitle={
+          product.name?.[lang!.toLowerCase()] || `product.name.${lang!.toLowerCase()}`
+        }
+        size="large"
+      >
         {t(
           `types.${
             product.type.toLowerCase().includes('lines') ? '0' : '1'
@@ -20,7 +25,9 @@ export const Product = ({ product }: { product: ProductType }) => {
       <section className="flex h-full max-lg:flex-col gap-14">
         <Image
           src={product.imageUrl}
-          alt={product.name}
+          alt={
+            product.name?.[lang!.toLowerCase()] || `product.name.${lang!.toLowerCase()}`
+          }
           width={2000}
           height={2000}
           className="h-auto shadow-header object-cover w-[32rem] max-sm:w-full self-center"

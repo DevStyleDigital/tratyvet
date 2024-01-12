@@ -49,14 +49,20 @@ export const Products = ({
                 >
                   <Image
                     src={product.imageUrl}
-                    alt={product.name}
+                    alt={
+                      product.name?.[lang!.toLowerCase()] ||
+                      `product.name.${lang!.toLowerCase()}`
+                    }
                     width={2000}
                     height={2000}
                     className="w-auto h-52 object-cover"
                   />
                   <div className="flex flex-col w-full justify-between h-full">
                     <div className="flex self-start flex-col gap-4">
-                      <span className="font-bold">{product.name}</span>
+                      <span className="font-bold">
+                        {product.name?.[lang!.toLowerCase()] ||
+                          `product.name.${lang!.toLowerCase()}`}
+                      </span>
                       <span
                         dangerouslySetInnerHTML={{
                           __html: purifyText(

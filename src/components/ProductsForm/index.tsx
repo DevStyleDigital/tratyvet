@@ -41,6 +41,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
   const [formValues] = useState<Omit<Product, 'imageUrl' | 'id'>>({
     items: product?.items || {},
     desc: product?.desc || {},
+    name: product?.name || {},
   } as any);
 
   async function handleSubmit() {
@@ -80,18 +81,25 @@ export const ProductForm = ({ product }: { product?: Product }) => {
         {t(product ? 'update' : 'create')}:
       </h1>
       <div className="flex-desk !justify-start flex-wrap">
-        <label htmlFor="product-name" className="input-label !w-fit">
-          <span>{`${t('product.inputs.name.label')}*`}</span>
-          <input
-            type="text"
-            defaultValue={product?.name}
-            placeholder={t('product.inputs.name.placeholder')}
-            className="input md:w-[23rem] w-full"
-            required
-            onChange={({ target: { value } }) => (formValues.name = value)}
-            id="product-name"
-          />
-        </label>
+        {Object.keys(locales).map((k) => (
+          <label htmlFor={`product-name-${k}`} className="input-label !w-fit" key={k}>
+            <span>{`${t('product.inputs.name.label').replace(
+              ':',
+              `(${k.toUpperCase()}):`,
+            )}*`}</span>
+            <input
+              type="text"
+              defaultValue={product?.name[k]}
+              placeholder={t('product.inputs.name.placeholder')}
+              className="input md:w-[23rem] w-full"
+              required
+              onChange={({ target: { value } }) =>
+                (formValues.name = { ...formValues.name, [k]: value })
+              }
+              id={`product-name-${k}`}
+            />
+          </label>
+        ))}
         {/* <div>
           <Select
             required
@@ -184,7 +192,7 @@ export const ProductForm = ({ product }: { product?: Product }) => {
       {Object.keys(locales).map((k) => (
         <div className="full relative" key={k}>
           <span className="tracking-[0.12em] text-lg font-extrabold font-sans-secondary uppercase">
-            Descrição em {k}
+            {t('product.inputs.desc.placeholder')} {k}
           </span>
           <textarea
             className="w-px h-px top-16 left-16 [clip:rect(0px,0px,0px,0px)] absolute"

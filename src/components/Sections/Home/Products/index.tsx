@@ -17,7 +17,7 @@ export const Products = ({
 }: {
   products: Pick<Product, 'type' | 'id' | 'imageUrl' | 'name'>[];
 }) => {
-  const { t } = useLang('home');
+  const { t, lang } = useLang('home');
   const router = useRouter();
   const [productSelectedTag, setProductSelectedTag] = useState(
     (router.query.ptag as string) || 'all',
@@ -55,7 +55,10 @@ export const Products = ({
                     </div>
                     <Image
                       src={product.imageUrl}
-                      alt={product.name}
+                      alt={
+                        product.name?.[lang!.toLowerCase()] ||
+                        `product.name.${lang!.toLowerCase()}`
+                      }
                       width={2000}
                       height={2000}
                       className="w-72 h-auto object-cover self-center"

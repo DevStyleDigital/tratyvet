@@ -1,6 +1,6 @@
 export type Product = {
   id: string;
-  name: string;
+  name: Record<string, string>;
   imageUrl: string;
   type: string;
   category: string;
