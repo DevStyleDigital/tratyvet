@@ -92,7 +92,6 @@ export const ProductForm = ({ product }: { product?: Product }) => {
               defaultValue={product?.name[k]}
               placeholder={t('product.inputs.name.placeholder')}
               className="input md:w-[23rem] w-full"
-              required
               onChange={({ target: { value } }) =>
                 (formValues.name = { ...formValues.name, [k]: value })
               }
@@ -198,7 +197,6 @@ export const ProductForm = ({ product }: { product?: Product }) => {
             className="w-px h-px top-16 left-16 [clip:rect(0px,0px,0px,0px)] absolute"
             aria-hidden
             tabIndex={-1}
-            required
             value={desc[k]}
             onChange={() => {}}
           />
