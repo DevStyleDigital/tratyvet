@@ -39,7 +39,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
     return {
       props: {
-        products: data,
+        products: data?.reverse(),
       },
     };
   } catch (err: any) {
