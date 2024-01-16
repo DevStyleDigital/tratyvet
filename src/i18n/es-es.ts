@@ -198,6 +198,7 @@ export const esES: typeof ptBR = {
         mask: 'Máscara',
         cologne: 'Colonia',
         conditioner: 'Acondicionador',
+        ceruminolytic: 'Ceruminolítico',
       },
     },
     types: {

@@ -198,6 +198,7 @@ export const ptBR = {
         mask: 'Máscara',
         cologne: 'Colônias',
         conditioner: 'Condicionador',
+        ceruminolytic: 'Ceruminolítico',
       },
     },
     types: {

@@ -200,6 +200,7 @@ export const enUS: typeof ptBR = {
         mask: 'Mask',
         cologne: 'Cologne',
         conditioner: 'Conditioner',
+        ceruminolytic: 'Ceruminolytic',
       },
     },
     types: {
