@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Wrapper } from '@googlemaps/react-wrapper';
 import React, { useEffect, useRef, useState } from 'react';
-import locatesInfo from '@root/locates-info.json';
 import { Sidebar } from './Sidebar';
 import mapInfo from '../../assets/mail/map-info.json';
+import { Distributor } from 'types/distributors';
 
 function getDistance(lat1: number, lon1: number, lat2: number, lon2: number) {
   const R = 6371; // Raio médio da Terra em quilômetros
@@ -56,14 +56,16 @@ const MapComp = ({
   setMarkerIds,
   latitude,
   longitude,
+  locatesInfo,
 }: MapCompProps & {
   setMarkerIds: React.Dispatch<React.SetStateAction<string[]>>;
+  locatesInfo: Distributor[];
 }) => {
   const ref = useRef(null);
   const [map, setMap] = useState<google.maps.Map | null>(null);
 
   useEffect(() => {
-    if (ref.current && !map) {
+    if (ref.current && !map && locatesInfo.length) {
       const googleMap = new google.maps.Map(ref.current, {
         zoomControl: true,
         panControl: true,
@@ -146,12 +148,14 @@ export const Map = ({
   setLongitude,
   postalCodeSubmitted,
   setPostalCodeSubmitted,
+  locatesInfo,
 }: MapCompProps & {
   postalCodeSubmitted?: string;
   setPostalCodeSubmitted: (v: string | undefined) => void;
   setLatitude: (v: number) => void;
   setLongitude: (v: number) => void;
   hasError: boolean;
+  locatesInfo: Distributor[];
 }) => {
   const [markerIds, setMarkerIds] = useState<string[]>([]);
 
@@ -162,7 +166,12 @@ export const Map = ({
   return (
     <div className="relative w-full h-full">
       <Wrapper apiKey={process.env.NEXT_PUBLIC_MAP_KEY!}>
-        <MapComp latitude={latitude} longitude={longitude} setMarkerIds={setMarkerIds} />
+        <MapComp
+          latitude={latitude}
+          longitude={longitude}
+          setMarkerIds={setMarkerIds}
+          locatesInfo={locatesInfo}
+        />
       </Wrapper>
       <Sidebar
         markerIds={markerIds}
@@ -172,6 +181,7 @@ export const Map = ({
         setPostalCodeSubmitted={setPostalCodeSubmitted}
         postalCodeSubmitted={postalCodeSubmitted}
         hasError={hasError}
+        locatesInfo={locatesInfo}
       />
     </div>
   );

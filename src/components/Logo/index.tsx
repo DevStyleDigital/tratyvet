@@ -19,7 +19,7 @@ export const Logo = ({
     <div
       className="flex items-center gap-2"
       style={{
-        ['--color' as string]: invert ? colors.white : colors.primary,
+        ['--color' as string]: invert ? colors.white : colors.primary.DEFAULT,
       }}
     >
       <div

@@ -18,7 +18,7 @@ export const Distributor = () => {
         </p>
         <Button
           size="big"
-          color={colors.secondary}
+          color={colors.secondary.DEFAULT}
           colorHover={violetColors[600]}
           href="/distributor"
           className="max-[434px]:flex-col max-[500px]:text-center"

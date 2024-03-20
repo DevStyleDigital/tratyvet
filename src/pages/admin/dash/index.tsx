@@ -22,9 +22,6 @@ const Dash = ({
       <Table
         columns={productsColumn(setProductsData)}
         rows={productsData}
-        pageSize={10}
-        rowsPerPageOptions={[10]}
-        disableSelectionOnClick
         editMode="row"
       />
     </div>

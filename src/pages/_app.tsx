@@ -1,4 +1,4 @@
-import { Montserrat } from '@next/font/google';
+import { Montserrat } from 'next/font/google';
 import clsx from 'clsx';
 import { Sidebar } from 'components/Admin/Sidebar';
 import { Footer } from 'components/Footer';
@@ -13,6 +13,7 @@ import 'styles/global.css';
 import 'react-quill/dist/quill.snow.css';
 
 import 'filepond/dist/filepond.min.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 import FilePondPluginImageExifOrientation from 'filepond-plugin-image-exif-orientation';
 import FilePondPluginFileValidateSize from 'filepond-plugin-file-validate-size';
@@ -22,6 +23,7 @@ import 'filepond-plugin-image-edit/dist/filepond-plugin-image-edit.css';
 import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
 import Head from 'next/head';
 import { WhatsApp } from 'assets/svgs/whatsapp';
+import { Toast } from 'components/toast';
 
 // Register the plugins
 registerPlugin(
@@ -84,6 +86,7 @@ const MyApp: BTypes.NPage<AppProps> = ({ Component, pageProps, router }) => {
             <main
               className={router.route.includes('/admin') ? 'overflow-auto w-full' : ''}
             >
+              <Toast />
               <Component {...pageProps} />
             </main>
             {!['/admin', '/distributor'].includes(router.route) && <Footer />}

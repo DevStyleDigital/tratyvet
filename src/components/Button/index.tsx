@@ -26,7 +26,7 @@ export const Button: BTypes.FC<{
       href={href!}
       {...props}
       style={{
-        ['--color' as string]: color || colors.primary,
+        ['--color' as string]: color || colors.primary.DEFAULT,
         ['--color-hover' as string]: colorHover || tealColor[600],
         ...props.style,
       }}

@@ -71,7 +71,7 @@ export const Products = ({
         <Button
           size="big"
           className="px-16"
-          color={colors.secondary}
+          color={colors.secondary.DEFAULT}
           variant="outline"
           href="/products"
         >

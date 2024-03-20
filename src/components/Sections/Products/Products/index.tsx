@@ -76,7 +76,7 @@ export const Products = ({
                     <Button
                       size="big"
                       className="w-full flex justify-center mt-4"
-                      color={colors.secondary}
+                      color={colors.secondary.DEFAULT}
                       colorHover={violet['600']}
                     >
                       <PlusIcon className="w-6 h-6" />

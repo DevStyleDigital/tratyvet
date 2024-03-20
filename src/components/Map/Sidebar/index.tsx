@@ -1,11 +1,8 @@
 import { Cross1Icon } from '@radix-ui/react-icons';
-import locatesInfo from '@root/locates-info.json';
 import clsx from 'clsx';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { Distributor } from 'types/distributors';
 import { shuffle } from 'utils/shuffle';
-
-const LOCATES = shuffle(locatesInfo) as typeof locatesInfo;
 
 export const Sidebar = ({
   setPostalCodeSubmitted,
@@ -15,6 +12,7 @@ export const Sidebar = ({
   setLatitude,
   setLongitude,
   hasError,
+  locatesInfo,
 }: {
   setPostalCodeSubmitted: (v: string | undefined) => void;
   postalCodeSubmitted?: string;
@@ -23,6 +21,7 @@ export const Sidebar = ({
   setLatitude: (v: number) => void;
   setLongitude: (v: number) => void;
   hasError: boolean;
+  locatesInfo: Distributor[];
 }) => {
   const [isClient, setIsClient] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -78,21 +77,23 @@ export const Sidebar = ({
 
           {isClient &&
             !hasError &&
-            LOCATES.filter((locateInfo, i) =>
-              markerIds.length ? markerIds.includes(locateInfo.id) : i <= 300,
-            ).map((locale) => (
-              <div
-                className="flex flex-col mb-4 group overflow-hidden gap-2 shadow-md select-none cursor-pointer bg-gray-200 rounded-lg transition"
-                key={locale.id}
-                onClick={() => {
-                  setPostalCodeSubmitted(locale.postalCode);
-                  setLatitude(locale.lat);
-                  setLongitude(locale.lng);
+            locatesInfo
+              .filter((locateInfo, i) =>
+                markerIds.length ? markerIds.includes(locateInfo.id) : i <= 300,
+              )
+              .map((locale) => (
+                <div
+                  className="flex flex-col mb-4 group overflow-hidden gap-2 shadow-md select-none cursor-pointer bg-gray-200 rounded-lg transition"
+                  key={locale.id}
+                  onClick={() => {
+                    setPostalCodeSubmitted(locale.postalCode);
+                    setLatitude(locale.lat);
+                    setLongitude(locale.lng);
 
-                  setTimeout(() => setMarkerIds([locale.id]), 500);
-                }}
-              >
-                {/* {imageUrl?.length ? (
+                    setTimeout(() => setMarkerIds([locale.id]), 500);
+                  }}
+                >
+                  {/* {imageUrl?.length ? (
                   <div className="w-full min-h-[8rem] block overflow-hidden">
                     <Image
                       alt=""
@@ -105,24 +106,24 @@ export const Sidebar = ({
                 ) : (
                   <></>locale
                 )} */}
-                <span
-                  className="break-all px-2 text-sm pt-4"
-                  dangerouslySetInnerHTML={{
-                    __html: `${locale.company || ''}<br />${locale.distributor}<br />${
-                      locale.phone
-                    }<br />${locale.email}`,
-                  }}
-                />
-                <div className="flex flex-col items-end px-2 gap-1 pb-4 text-xs">
-                  <span>{`${locale.region ? locale.region : locale.city}, ${
-                    locale.state
-                  }, ${locale.country}`}</span>
-                  <span className="bg-gray-300 w-fit p-1 px-4 rounded-full">
-                    {locale.postalCode}
-                  </span>
+                  <span
+                    className="break-all px-2 text-sm pt-4"
+                    dangerouslySetInnerHTML={{
+                      __html: `${locale.company || ''}<br />${locale.distributor}<br />${
+                        locale.phone
+                      }<br />${locale.email}`,
+                    }}
+                  />
+                  <div className="flex flex-col items-end px-2 gap-1 pb-4 text-xs">
+                    <span>{`${locale.region ? locale.region : locale.city}, ${
+                      locale.state
+                    }, ${locale.country}`}</span>
+                    <span className="bg-gray-300 w-fit p-1 px-4 rounded-full">
+                      {locale.postalCode}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
         </div>
       </div>
     </>

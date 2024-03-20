@@ -7,8 +7,23 @@ import { useState } from 'react';
 import { Map } from 'components/Map';
 import { getCordsByPostalCode } from 'services/getCordsByPostalCode';
 import { Country, CountrySelector } from 'components/CountrySelector';
+import { supabase } from 'services/supabase';
+import { Distributor as DistributorType } from 'types/distributors';
+import { GetStaticProps, NextPage } from 'next';
 
-const Distributor = () => {
+interface Props {
+  distributors: DistributorType[];
+}
+
+const getDistributors = async (): Promise<DistributorType[]> => {
+  const { data, error } = await supabase.from('distributors').select('*');
+  if (error) {
+    throw error;
+  }
+  return data || [];
+};
+
+const Distributor: NextPage<Props> = ({ distributors }) => {
   const { t } = useLang('distributor');
   const [countrySelector, setCountrySelector] = useState<Country | null>();
   const [postalCode, setPostalCode] = useState<string | undefined>();
@@ -32,7 +47,7 @@ const Distributor = () => {
     setErrorMsg(undefined);
     setPostalCodeSubmitted(postalCode);
     getCordsByPostalCode(postalCode!, countrySelector?.code!)
-      .then(({ lat, lng }) => {
+      .then(({ coordinates: { lat, lng } }) => {
         setLatitude(lat);
         setLongitude(lng);
       })
@@ -70,7 +85,11 @@ const Distributor = () => {
                   setErrorMsg(undefined);
                 }}
               />
-              <Button type="submit" color={colors.secondary} colorHover={violet['600']}>
+              <Button
+                type="submit"
+                color={colors.secondary.DEFAULT}
+                colorHover={violet['600']}
+              >
                 {t('hero.button')}
               </Button>
             </div>
@@ -95,10 +114,21 @@ const Distributor = () => {
           setLatitude={setLatitude}
           setLongitude={setLongitude}
           hasError={error}
+          locatesInfo={distributors}
         />
       </section>
     </>
   );
+};
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const distributors = await getDistributors();
+  return {
+    props: {
+      distributors,
+    },
+    revalidate: 5 * 60 * 60,
+  };
 };
 
 export default Distributor;

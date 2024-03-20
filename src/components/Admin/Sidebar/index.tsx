@@ -1,6 +1,11 @@
 import { Logo } from 'components/Logo';
 import { Tooltip } from 'components/Tooltip';
-import { Component2Icon, ExitIcon, PlusIcon } from '@radix-ui/react-icons';
+import {
+  Component2Icon,
+  ExitIcon,
+  PlusIcon,
+  SewingPinFilledIcon,
+} from '@radix-ui/react-icons';
 import { Slot } from '@radix-ui/react-slot';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -54,7 +59,14 @@ export const Sidebar = () => {
         <SidebarLink className="mt-4" href="/admin/dash" tooltipContent="Go to Dash">
           <Component2Icon className="w-5 h-5" />
         </SidebarLink>
-        <SidebarLink href="/admin/dash/product/create" tooltipContent="Add Product">
+        <SidebarLink href="/admin/dash/distributors" tooltipContent="Go to Distributors">
+          <SewingPinFilledIcon className="w-5 h-5" />
+        </SidebarLink>
+        <SidebarLink
+          className="mt-4"
+          href="/admin/dash/product/create"
+          tooltipContent="Add Product"
+        >
           <PlusIcon className="w-5 h-5" />
         </SidebarLink>
       </div>

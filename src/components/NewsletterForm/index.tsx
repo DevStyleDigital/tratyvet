@@ -39,7 +39,7 @@ export const NewsletterForm = ({
           type="submit"
           size="big"
           className="max-md:w-full sm:min-w-[15rem] !px-5 flex justify-center"
-          color={colors.secondary}
+          color={colors.secondary.DEFAULT}
           colorHover={violet['600']}
         >
           <span>{t('hero.newsletter.button')}</span>
