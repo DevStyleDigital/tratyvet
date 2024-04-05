@@ -14,27 +14,29 @@ function generateSiteMap(ids: string[]) {
       xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
       xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
-      ${['', ...Object.keys(locales)]
-        .map((l) => `${l}/`)
-        .map(
-          (lang) => `
+      ${['', ...Object.keys(locales)].map(
+        (lang) => `
           <url>
-            <loc>https://tratyvet.com.br/${lang.replace('/', '')}</loc>
+            <loc>https://tratyvet.com.br${lang === '' ? '/' : `/${lang}`}</loc>
             <lastmod>2024-04-05T14:00:12.405Z</lastmod>
             <priority>1</priority>
           </url>
           <url>
-            <loc>https://tratyvet.com.br/${lang}distributor</loc>
+            <loc>https://tratyvet.com.br${
+              lang === '' ? '/' : `/${lang}/`
+            }distributor</loc>
             <lastmod>2024-04-05T14:00:12.405Z</lastmod>
             <priority>0.8</priority>
           </url>
           <url>
-            <loc>https://tratyvet.com.br/${lang}becomes-distributor</loc>
+            <loc>https://tratyvet.com.br${
+              lang === '' ? '/' : `/${lang}`
+            }becomes-distributor</loc>
             <lastmod>2024-04-05T14:00:12.405Z</lastmod>
             <priority>0.7</priority>
           </url>
           <url>
-            <loc>https://tratyvet.com.br/${lang}products</loc>
+            <loc>https://tratyvet.com.br${lang === '' ? '/' : `/${lang}/`}products</loc>
             <lastmod>2024-04-05T14:00:12.405Z</lastmod>
             <priority>0.9</priority>
           </url>
@@ -42,14 +44,16 @@ function generateSiteMap(ids: string[]) {
             .map((id) => {
               return `
                 <url>
-                  <loc>${`https://tratyvet.com.br/${lang}products/${id}`}</loc>
+                  <loc>${`https://tratyvet.com.br${
+                    lang === '' ? '/' : `/${lang}/`
+                  }products/${id}`}</loc>
                   <priority>0.9</priority>
                 </url>
               `;
             })
             .join('')}
         `,
-        )}
+      )}
     </urlset>
   `;
 }
