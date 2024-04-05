@@ -26,14 +26,14 @@ function generateSiteMap(ids: string[]) {
               lang === '' ? '/' : `/${lang}/`
             }distributor</loc>
             <lastmod>2024-04-05T14:00:12.405Z</lastmod>
-            <priority>0.8</priority>
+            <priority>0.9</priority>
           </url>
           <url>
             <loc>https://tratyvet.com.br${
               lang === '' ? '/' : `/${lang}`
             }becomes-distributor</loc>
             <lastmod>2024-04-05T14:00:12.405Z</lastmod>
-            <priority>0.7</priority>
+            <priority>0.9</priority>
           </url>
           <url>
             <loc>https://tratyvet.com.br${lang === '' ? '/' : `/${lang}/`}products</loc>
@@ -47,7 +47,7 @@ function generateSiteMap(ids: string[]) {
                   <loc>${`https://tratyvet.com.br${
                     lang === '' ? '/' : `/${lang}/`
                   }products/${id}`}</loc>
-                  <priority>0.9</priority>
+                  <priority>0.8</priority>
                 </url>
               `;
             })
