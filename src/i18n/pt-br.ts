@@ -78,10 +78,10 @@ export const ptBR = {
   },
   home: {
     hero: {
-      title: 'Todo o amor e carinho que temos por esses parceiros de vida',
-      subtitle: 'Cuidando bem de quem você ama',
+      title: 'PRODUTOS DE ALTA PERFORMANCE PARA VOCÊ USAR NO SEU BANHO E TOSA',
+      subtitle: 'PRODUTOS PARA USO PROFISSIONAIS DE GROOMERS',
       description:
-        "A <strong>Traty Vet</strong> é uma Fábrica de Cosmética Animal com referência nacional, que busca levar a você o que tem de melhor no quesito bem-estar animal, produzindo com muito amor e dedicação, produtos voltados para os Groomers e segmentos de Petshop's.",
+        'A <strong>Traty Vet</strong> é uma Fábrica de Cosmética Animal com referência nacional, que busca levar a você o que tem de melhor de melhor para o seu banho e tosa. Custo benefício, alto rendimento, inovação e essências duradouras, são os destaques da nossa marca. Produtos voltados para os Groomers e segmentos de Pet Shop.',
 
       newsletter: {
         label: 'Fique por dentro de todas as nossas novidades',

@@ -80,10 +80,10 @@ export const enUS: typeof ptBR = {
   },
   home: {
     hero: {
-      title: 'All the love and care we have for these life partners',
-      subtitle: 'Taking good care of those you love',
+      title: 'HIGH PERFORMANCE PRODUCTS FOR YOUR BATH AND GROOMING NEEDS',
+      subtitle: 'PRODUCTS FOR PROFESSIONAL GROOMERS',
       description:
-        "<strong>Traty Vet</strong> is a nationally recognized Animal Cosmetic Factory that strives to bring you the best in animal well-being, producing products for Groomers and Petshop's segments with love and dedication.",
+        '<strong>Traty Vet</strong> is a nationally recognized Animal Cosmetics Factory that aims to bring you the best for your bath and grooming needs. Cost-effectiveness, high performance, innovation, and long-lasting scents are the highlights of our brand. Products designed for Groomers and Pet Shop segments.',
 
       newsletter: {
         label: 'Stay up to date with all our news',
