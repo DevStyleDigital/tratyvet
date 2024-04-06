@@ -56,7 +56,7 @@ hr {
 }
 
 .hero-title {
-  @apply text-white mb-8 tracking-[0.12em] text-4xl min-[512px]:text-[2.75rem] font-extrabold font-sans-secondary uppercase
+  @apply text-white leading-10 mb-8 tracking-[0.3em] text-4xl min-[512px]:text-[2.75rem] font-extrabold font-sans-secondary uppercase
 }
 
 .separate-section {

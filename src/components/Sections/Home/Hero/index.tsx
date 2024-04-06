@@ -11,12 +11,10 @@ export const Hero = () => {
       <div className="max-desk flex items-center">
         <div className="flex flex-col z-10 max-[1150px]:text-center">
           <div>
-            <span className="tracking-[0.4em] text-sm font-medium uppercase">
+            <span className="tracking-[0.4em] mb-5 block text-sm font-medium uppercase">
               {t('hero.subtitle')}
             </span>
-            <h1 className="hero-title text-justify max-md:text-center">
-              {t('hero.title')}
-            </h1>
+            <h1 className="hero-title max-md:text-center">{t('hero.title')}</h1>
             <p
               className="text-white text-justify"
               dangerouslySetInnerHTML={{
