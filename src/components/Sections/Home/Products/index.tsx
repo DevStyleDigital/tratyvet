@@ -23,11 +23,12 @@ export const Products = ({
   );
 
   useEffect(() => {
-    if (router.query.ptag === 'all') {
+    const query = router.query.ptag || 'all';
+    if (query === 'all') {
       setProductSelected(products.filter((_, i) => i < 8));
       return;
     }
-    setProductSelected(products.filter(({ type }) => type === router.query.ptag));
+    setProductSelected(products.filter(({ type }) => type === query));
   }, [router.query.ptag, products]);
 
   return (
@@ -36,7 +37,7 @@ export const Products = ({
         {t('products.title')}
       </Title>
 
-      <ProductsHeader value={router.query.ptag as 'all'} />
+      <ProductsHeader value={(router.query.ptag as 'all') || 'all'} />
       <div className="flex items-center justify-center flex-col mt-10">
         <div className="flex px-3 flex-wrap mb-10">
           <ul className="w-full flex flex-wrap justify-center gap-8">
