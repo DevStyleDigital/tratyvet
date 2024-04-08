@@ -1,4 +1,4 @@
-import HeroBanner from 'assets/imgs/hero-home-banner.png';
+import HeroBanner from 'assets/imgs/hero-home-banner.webp';
 import { useLang } from 'hooks/use-lang';
 import { purifyText } from 'services/purifyText';
 import Image from 'next/image';
@@ -7,7 +7,7 @@ import Image from 'next/image';
 export const Hero = () => {
   const { t } = useLang('home');
   return (
-    <section className="hero relative px-4 pb-8 md:pt-24 pt-6">
+    <section className="hero relative px-4 py-16">
       <div className="max-desk flex items-center">
         <div className="flex flex-col z-10 max-[1150px]:text-center">
           <div>

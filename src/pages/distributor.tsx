@@ -10,6 +10,7 @@ import { Country, CountrySelector } from 'components/CountrySelector';
 import { supabase } from 'services/supabase';
 import { Distributor as DistributorType } from 'types/distributors';
 import { GetStaticProps, NextPage } from 'next';
+import Head from 'next/head';
 
 interface Props {
   distributors: DistributorType[];
@@ -60,6 +61,10 @@ const Distributor: NextPage<Props> = ({ distributors }) => {
 
   return (
     <>
+      <Head>
+        <title>TratyVet | {t('title')}</title>
+        <meta name="description" content={t('description')} />
+      </Head>
       <section className="hero relative px-4 md:py-8 !py-8">
         <div className="max-w-[43rem] mx-auto flex flex-col items-center !justify-center md:justify-between ">
           <h1 className="hero-title text-center">{t('hero.title')}</h1>

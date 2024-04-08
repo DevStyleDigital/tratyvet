@@ -9,12 +9,10 @@ export const CustomHeader = ({
   items,
   query,
   value,
-  setValue,
 }: {
   query: string;
   items: Item[];
   value: Item['value'];
-  setValue: (value: Item['value']) => void;
 }) => {
   const { t } = useLang();
 
@@ -28,7 +26,6 @@ export const CustomHeader = ({
                 <li className="flex">
                   <Link
                     href={`?${query}=${item.value}`}
-                    onClick={() => setValue(item.value)}
                     scroll={false}
                     className={clsx(
                       'px-11 py-4 whitespace-nowrap font-bold transition-all',
@@ -44,7 +41,10 @@ export const CustomHeader = ({
                 </li>
                 {((value !== item.value && value !== items[i + 1]?.value) ||
                   i === items.length - 1) && (
-                  <span className="w-px flex flex-shrink-0 rounded-full bg-secondary/20 h-4" />
+                  <span
+                    aria-hidden
+                    className="w-px flex flex-shrink-0 rounded-full bg-secondary/20 h-4"
+                  />
                 )}
               </React.Fragment>
             ))}

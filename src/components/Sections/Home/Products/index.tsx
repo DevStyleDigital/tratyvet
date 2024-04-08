@@ -7,10 +7,9 @@ import { useLang } from 'hooks/use-lang';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Product } from 'types/product';
 import { ProductsHeader } from './ProductsHeader';
-import { shuffle } from 'utils/shuffle';
 
 export const Products = ({
   products,
@@ -19,9 +18,17 @@ export const Products = ({
 }) => {
   const { t, lang } = useLang('home');
   const router = useRouter();
-  const [productSelectedTag, setProductSelectedTag] = useState(
-    (router.query.ptag as string) || 'all',
+  const [productSelected, setProductSelected] = useState(
+    products.filter((_, i) => i < 8),
   );
+
+  useEffect(() => {
+    if (router.query.ptag === 'all') {
+      setProductSelected(products.filter((_, i) => i < 8));
+      return;
+    }
+    setProductSelected(products.filter(({ type }) => type === router.query.ptag));
+  }, [router.query.ptag, products]);
 
   return (
     <section className="max-desk !max-w-[80rem]">
@@ -29,43 +36,32 @@ export const Products = ({
         {t('products.title')}
       </Title>
 
-      <ProductsHeader
-        value={productSelectedTag as 'all'}
-        setValue={setProductSelectedTag}
-      />
+      <ProductsHeader value={router.query.ptag as 'all'} />
       <div className="flex items-center justify-center flex-col mt-10">
         <div className="flex px-3 flex-wrap mb-10">
           <ul className="w-full flex flex-wrap justify-center gap-8">
-            {(productSelectedTag === 'all' ? shuffle(products) : products)
-              .filter(
-                ({ type }) => productSelectedTag === 'all' || type === productSelectedTag,
-              )
-              .filter((_, i) => i < 8)
-              .map((product) => (
-                <li
-                  key={product.id}
-                  className="group rounded-3xl overflow-hidden relative"
-                >
-                  <Link href={`/products/${product.id}`} className="flex w-fit h-fit">
-                    <div className="group-hover:opacity-100 opacity-0 flex-col items-center justify-center w-full transition-all h-full flex bg-text/80 absolute top-0 left-0">
-                      <PlusCircleIcon />
-                      <p className="text-white text-xl">
-                        {t('products.product-read-more')}
-                      </p>
-                    </div>
-                    <Image
-                      src={product.imageUrl}
-                      alt={
-                        product.name?.[lang!.toLowerCase()] ||
-                        `product.name.${lang!.toLowerCase()}`
-                      }
-                      width={2000}
-                      height={2000}
-                      className="w-72 h-auto object-cover self-center"
-                    />
-                  </Link>
-                </li>
-              ))}
+            {productSelected.map((product) => (
+              <li key={product.id} className="group rounded-3xl overflow-hidden relative">
+                <Link href={`/products/${product.id}`} className="flex w-fit h-fit">
+                  <div className="group-hover:opacity-100 opacity-0 flex-col items-center justify-center w-full transition-all h-full flex bg-text/80 absolute top-0 left-0">
+                    <PlusCircleIcon />
+                    <p className="text-white text-xl">
+                      {t('products.product-read-more')}
+                    </p>
+                  </div>
+                  <Image
+                    src={product.imageUrl}
+                    alt={
+                      product.name?.[lang!.toLowerCase()] ||
+                      `product.name.${lang!.toLowerCase()}`
+                    }
+                    width={2000}
+                    height={2000}
+                    className="w-72 h-auto object-cover self-center"
+                  />
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <Button

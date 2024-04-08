@@ -7,12 +7,6 @@ const TYPES = [
 
 type Types = typeof TYPES;
 
-export const ProductsHeader = ({
-  value,
-  setValue,
-}: {
-  value: Types[number]['value'];
-  setValue: (value: Types[number]['value']) => void;
-}) => {
-  return <CustomHeader items={TYPES} query="ptype" setValue={setValue} value={value} />;
+export const ProductsHeader = ({ value }: { value: Types[number]['value'] }) => {
+  return <CustomHeader items={TYPES} query="ptype" value={value} />;
 };

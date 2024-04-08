@@ -2,6 +2,7 @@ import React from 'react';
 import * as Select from '@radix-ui/react-select';
 import clsx from 'clsx';
 import { useWindowSize } from 'hooks/window-size';
+import { useLang } from 'hooks/use-lang';
 
 const LanguageSelectPortal: BTypes.FC = ({ children }) => {
   return (
@@ -39,6 +40,7 @@ const LanguageSelectPortal: BTypes.FC = ({ children }) => {
 export const LanguageSelect: BTypes.FC<{ onValueChange: (value: string) => void }> & {
   Option: BTypes.FC<{ value: string }>;
 } = ({ children, className, defaultValue, onValueChange }) => {
+  const { t } = useLang();
   const size = useWindowSize();
   const Container =
     size.width && size.width < 1024 ? LanguageSelectPortal : React.Fragment;
@@ -51,7 +53,10 @@ export const LanguageSelect: BTypes.FC<{ onValueChange: (value: string) => void 
       })}
     >
       <Select.Root defaultValue={defaultValue as string} onValueChange={onValueChange}>
-        <Select.Trigger className="text-primary outline-none translate-y-[12%] flex gap-3">
+        <Select.Trigger
+          aria-label={t('languages_select')}
+          className="text-primary outline-none translate-y-[12%] flex gap-3"
+        >
           <Select.Value />
           <Select.Icon>
             <div className="h-2 w-2 relative translate-y-[15%]">

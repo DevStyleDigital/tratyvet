@@ -13,7 +13,7 @@ export const Link: BTypes.FC<LinkProps> = ({ ...props }) => {
         'text-primary transition-opacity tracking-[0.12em] text-sm opacity-70  hover:opacity-100 cursor-pointer pb-2',
         {
           'font-semibold after:contents-[""] after:mx-auto after:block after:w-10/12 after:h-[2px] after:bg-secondary':
-            router.asPath === props.href,
+            router.pathname === props.href,
         },
       )}
     />

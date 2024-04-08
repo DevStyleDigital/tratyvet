@@ -2,6 +2,7 @@ import { ptBR } from './pt-br';
 
 export const enUS: typeof ptBR = {
   logoAlt: 'TRATY VET - vectorized logo',
+  languages_select: 'Select a language',
 
   header: {
     'toggle-navigation': 'Open/close navigation menu',
@@ -79,6 +80,9 @@ export const enUS: typeof ptBR = {
     },
   },
   home: {
+    title: 'Home',
+    description:
+      'is a nationally recognized Animal Cosmetics Factory that aims to bring you the best for your bath and grooming needs',
     hero: {
       title: 'HIGH PERFORMANCE PRODUCTS FOR YOUR BATH AND GROOMING NEEDS',
       subtitle: 'PRODUCTS FOR PROFESSIONAL GROOMERS',
@@ -170,6 +174,8 @@ export const enUS: typeof ptBR = {
     },
   },
   distributor: {
+    title: 'Distributor',
+    description: 'Find a TratyVet distributor near you!',
     hero: {
       title: 'Find a distributor',
       input: 'Enter your city',
@@ -223,6 +229,7 @@ export const enUS: typeof ptBR = {
     'es-es': 'Spain',
   },
   becomes_distributor: {
+    title_meta: 'Distributor',
     subtitle: 'TratyVet',
     title: 'Become a Distributor',
     email: {

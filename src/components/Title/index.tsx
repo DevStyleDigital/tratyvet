@@ -18,12 +18,12 @@ export const Title: BTypes.FC<{ subtitle?: string; size?: 'large' | 'small' }> =
       )}
     >
       <div className="flex flex-col mb-3">
-        <h1 className="text-primary text-3xl font-semibold uppercase font-sans-secondary">
+        <h2 className="text-primary text-3xl font-semibold uppercase font-sans-secondary">
           {children}
-        </h1>
+        </h2>
         <span className="w-4/5 self-center h-px bg-secondary" />
       </div>
-      <h2 className="text-xl font-medium">{subtitle}</h2>
+      <h1 className="text-xl font-medium">{subtitle}</h1>
     </div>
   );
 };

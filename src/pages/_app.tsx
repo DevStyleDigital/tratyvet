@@ -43,12 +43,7 @@ const MyApp: BTypes.NPage<AppProps> = ({ Component, pageProps, router }) => {
   return (
     <>
       <Head>
-        <title>Tratyvet</title>
         <link rel="icon" href="/favicon.png" />
-        <meta
-          name="description"
-          content="Produtos para banho e tosa, Produtos para Pet Shop, Cosmético Animal, Banho e Tosa, Pet Shop, Shampoo para pelagem Pet, Condicionador para pelagem pet, Leave-In para pelagem pet, Máscara para pelagem pet, Tratamento de pelagem pet, Colônias para Pet"
-        />
       </Head>
       <SessionContextProvider
         supabaseClient={supabaseClient}

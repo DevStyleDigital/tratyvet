@@ -1,11 +1,29 @@
 import * as Sections from 'components/Sections/Products';
+import { useLang } from 'hooks/use-lang';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import Head from 'next/head';
+import { purifyText } from 'services/purifyText';
 import { supabase } from 'services/supabase';
 import { Product as ProductType } from 'types/product';
 
 const Product = ({ product }: { product: ProductType }) => {
+  const { lang } = useLang('products');
+
   return (
     <>
+      <Head>
+        <title>
+          TratyVet |{' '}
+          {product.name?.[lang!.toLowerCase()] || `product.name.${lang!.toLowerCase()}`}
+        </title>
+        <meta
+          name="description"
+          content={
+            product.desc?.[lang!.toLowerCase()].replace(/(<([^>]+)>)/gi, '') ||
+            `product.desc.${lang!.toLowerCase()}`
+          }
+        />
+      </Head>
       <Sections.Hero />
       <Sections.Product product={product} />
     </>

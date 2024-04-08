@@ -45,6 +45,7 @@ export const Points = () => {
               </li>
               {i !== POINTS.length - 1 && (
                 <hr
+                  aria-hidden
                   className={clsx('rounded-full w-2 bg-secondary h-2', {
                     'max-[1075px]:hidden': i === 1,
                     'max-[703px]:hidden': i === 0,

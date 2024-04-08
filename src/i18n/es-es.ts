@@ -2,6 +2,7 @@ import { ptBR } from './pt-br';
 
 export const esES: typeof ptBR = {
   logoAlt: 'TRATY VET - logotipo vectorizado',
+  languages_select: 'Selecciona un idioma',
 
   header: {
     'toggle-navigation': 'Abrir/cerrar menú de navegación',
@@ -79,6 +80,9 @@ export const esES: typeof ptBR = {
     },
   },
   home: {
+    title: 'Inicio',
+    description:
+      'Una Fábrica de Cosmética Animal reconocida a nivel nacional que busca ofrecerte lo mejor para tu baño y aseo.',
     hero: {
       title: 'PRODUCTOS DE ALTO RENDIMIENTO PARA SU BAÑO Y ASEO',
       subtitle: 'PRODUCTOS PARA GROOMERS PROFESIONALES',
@@ -168,6 +172,8 @@ export const esES: typeof ptBR = {
     },
   },
   distributor: {
+    title: 'Distribuidor',
+    description: '¡Encuentre un distribuidor TratyVet cerca de usted!',
     hero: {
       title: 'Encuentra un distribuidor',
       input: 'Ingresa tu ciudad',
@@ -221,6 +227,7 @@ export const esES: typeof ptBR = {
   },
 
   becomes_distributor: {
+    title_meta: 'Distribuidor',
     subtitle: 'TratyVet',
     title: 'Conviértete en un Distribuidor',
     email: {

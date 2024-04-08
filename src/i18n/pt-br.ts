@@ -1,5 +1,6 @@
 export const ptBR = {
   logoAlt: 'TRATY VET - logo vetorizado',
+  languages_select: 'Selecione um idioma',
 
   header: {
     'toggle-navigation': 'Abrir/fechar menu navegação',
@@ -77,6 +78,9 @@ export const ptBR = {
     },
   },
   home: {
+    title: 'Início',
+    description:
+      'Uma Fábrica de Cosmética Animal com referência nacional, que busca levar a você o que tem de melhor de melhor para o seu banho e tosa.',
     hero: {
       title: 'PRODUTOS DE ALTA PERFORMANCE PARA VOCÊ USAR NO SEU BANHO E TOSA',
       subtitle: 'PRODUTOS PARA USO PROFISSIONAIS DE GROOMERS',
@@ -168,6 +172,8 @@ export const ptBR = {
     },
   },
   distributor: {
+    title: 'Distribuidor',
+    description: 'Encontre um distribuidor TratyVet perto de você!',
     hero: {
       title: 'Encontre um distribuidor',
       input: 'Digite a sua cidade',
@@ -222,6 +228,7 @@ export const ptBR = {
   },
 
   becomes_distributor: {
+    title_meta: 'Distribuidor',
     subtitle: 'TratyVet',
     title: 'Quero ser um distribuidor',
     email: {

@@ -35,7 +35,7 @@ export const Product = ({ product }: { product: ProductType }) => {
 
         <div className="flex w-full flex-col justify-between h-auto">
           <div className="w-full">
-            <div
+            <p
               dangerouslySetInnerHTML={{
                 __html: purifyText(
                   product.desc?.[lang!.toLowerCase()] ||

@@ -1,4 +1,4 @@
-import HeroBanner from 'assets/imgs/hero-home-banner.png';
+import HeroBanner from 'assets/imgs/hero-home-banner.webp';
 import { useLang } from 'hooks/use-lang';
 import Image from 'next/image';
 import { purifyText } from 'services/purifyText';
