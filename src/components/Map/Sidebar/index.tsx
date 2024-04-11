@@ -109,8 +109,12 @@ export const Sidebar = ({
                   <span
                     className="break-all px-2 text-sm pt-4"
                     dangerouslySetInnerHTML={{
-                      __html: `${locale.company || ''}<br />${locale.distributor}<br />${
-                        locale.phone
+                      __html: `${locale.company || ''}<br />${
+                        locale.distributor
+                      }<br /><br />${locale.phone.split('/')[0]}<br />${
+                        locale.phone.split('/')[1]
+                          ? `${locale.phone.split('/')[1]}<br />`
+                          : ''
                       }<br />${locale.email}`,
                     }}
                   />

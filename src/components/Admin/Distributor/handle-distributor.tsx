@@ -37,7 +37,8 @@ export const HandleDistributor = ({
     lng: distribuidor?.lng.toString(),
   });
   const [cep, setCep] = useState(distribuidor?.postalCode || '');
-  const [phone, setPhone] = useState(distribuidor?.phone || '');
+  const [phone, setPhone] = useState(distribuidor?.phone.split('/')[0] || '');
+  const [phone2, setPhone2] = useState(distribuidor?.phone.split('/')[1] || '');
   const [loading, setLoading] = React.useState(false);
   const [noResult, setNoResult] = React.useState(false);
 
@@ -166,7 +167,7 @@ export const HandleDistributor = ({
               company,
               name,
               email,
-              phone,
+              phone: `${phone}/${phone2}`,
               region,
               country: 'BR',
               postalCode: cep,
@@ -194,7 +195,7 @@ export const HandleDistributor = ({
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="name">Loja*</Label>
+                <Label htmlFor="company">Loja*</Label>
                 <input
                   type="text"
                   id="company"
@@ -207,23 +208,49 @@ export const HandleDistributor = ({
               </div>
               <hr className="w-full bg-muted-foreground/60 h-px" />
               <div className="space-y-2">
-                <Label htmlFor="name">E-Mail*</Label>
+                <Label htmlFor="email">E-Mail</Label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   className="input w-full"
                   placeholder="afonso@gmail.com"
-                  required
                   defaultValue={distribuidor?.email}
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="name">Telefone/Celular*</Label>
+                <Label htmlFor="phone">Telefone/Celular*</Label>
                 <InputMask
                   id="phone"
                   name="phone"
                   required
+                  mask={[
+                    '(',
+                    /\d/,
+                    /\d/,
+                    ')',
+                    ' ',
+                    '9',
+                    /\d/,
+                    /\d/,
+                    /\d/,
+                    /\d/,
+                    '-',
+                    /\d/,
+                    /\d/,
+                    /\d/,
+                    /\d/,
+                  ]}
+                  placeholder="(44) 91111-1111"
+                  value={phone2}
+                  onChange={({ target: { value } }) => setPhone2(value)}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="phone2">Telefone/Celular 2 (opcional)</Label>
+                <InputMask
+                  id="phone2"
+                  name="phone2"
                   mask={[
                     '(',
                     /\d/,
@@ -248,7 +275,7 @@ export const HandleDistributor = ({
               </div>
               <hr className="w-full bg-muted-foreground/60 h-px" />
               <div className="space-y-2">
-                <Label htmlFor="name">CEP*</Label>
+                <Label htmlFor="postalCode">CEP*</Label>
                 <InputMask
                   id="postalCode"
                   name="postalCode"
@@ -261,9 +288,10 @@ export const HandleDistributor = ({
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="name">Cidade*</Label>
+                <Label htmlFor="city">Cidade*</Label>
                 <input
                   type="text"
+                  id="city"
                   className="input w-full"
                   placeholder="São Paulo"
                   required
@@ -272,9 +300,10 @@ export const HandleDistributor = ({
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="name">Estado*</Label>
+                <Label htmlFor="state">Estado*</Label>
                 <input
                   type="text"
+                  id="state"
                   className="input w-full"
                   placeholder="São Paulo"
                   required
@@ -283,7 +312,7 @@ export const HandleDistributor = ({
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="name">Região (Opcional)</Label>
+                <Label htmlFor="region">Região (Opcional)</Label>
                 <input
                   type="text"
                   id="region"
@@ -294,7 +323,7 @@ export const HandleDistributor = ({
               </div>
               <div className="flex gap-2">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Latitude*</Label>
+                  <Label htmlFor="lat">Latitude*</Label>
                   <input
                     id="lat"
                     name="lat"
@@ -310,7 +339,7 @@ export const HandleDistributor = ({
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="name">Longitude*</Label>
+                  <Label htmlFor="lng">Longitude*</Label>
                   <input
                     id="lng"
                     name="lng"
