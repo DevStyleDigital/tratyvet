@@ -16,14 +16,6 @@ interface Props {
   distributors: DistributorType[];
 }
 
-const getDistributors = async (): Promise<DistributorType[]> => {
-  const { data, error } = await supabase.from('distributors').select('*');
-  if (error) {
-    throw error;
-  }
-  return data || [];
-};
-
 const Distributor: NextPage<Props> = ({ distributors }) => {
   const { t } = useLang('distributor');
   const [countrySelector, setCountrySelector] = useState<Country | null>();
@@ -126,11 +118,12 @@ const Distributor: NextPage<Props> = ({ distributors }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const distributors = await getDistributors();
+export const getStaticProps: GetStaticProps = async () => {
+  const { data } = await supabase.from('distributors').select('*').range(0, 1000);
+
   return {
     props: {
-      distributors,
+      distributors: data || [],
     },
     revalidate: 5 * 60 * 60,
   };
