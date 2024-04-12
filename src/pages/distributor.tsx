@@ -119,13 +119,13 @@ const Distributor: NextPage<Props> = ({ distributors }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await supabase.from('distributors').select('*').range(0, 1000);
+  const { data } = await supabase.from('distributors').select('*');
 
   return {
     props: {
       distributors: data || [],
     },
-    revalidate: 10,
+    revalidate: 5 * 60 * 60,
   };
 };
 
