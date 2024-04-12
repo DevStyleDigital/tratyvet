@@ -125,7 +125,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       distributors: data || [],
     },
-    revalidate: 5 * 60 * 60,
+    revalidate: 10,
   };
 };
 
