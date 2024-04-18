@@ -7,17 +7,26 @@ import { useState } from 'react';
 import { Map } from 'components/Map';
 import { getCordsByPostalCode } from 'services/getCordsByPostalCode';
 import { Country, CountrySelector } from 'components/CountrySelector';
-import { supabase } from 'services/supabase';
 import { Distributor as DistributorType } from 'types/distributors';
-import { GetStaticProps, NextPage } from 'next';
+import { NextPage } from 'next';
 import Head from 'next/head';
+import useSWR from 'swr';
+import { supabaseClient } from 'services/supabase/client';
 
 interface Props {
   distributors: DistributorType[];
 }
 
-const Distributor: NextPage<Props> = ({ distributors }) => {
+const Distributor: NextPage<Props> = () => {
   const { t } = useLang('distributor');
+  const { data } = useSWR(
+    'distributors',
+    async () =>
+      await supabaseClient
+        .from('distributors')
+        .select('*')
+        .order('created_at', { ascending: false }),
+  );
   const [countrySelector, setCountrySelector] = useState<Country | null>();
   const [postalCode, setPostalCode] = useState<string | undefined>();
   const [postalCodesSubmitted, setPostalCodeSubmitted] = useState<string | undefined>();
@@ -103,30 +112,21 @@ const Distributor: NextPage<Props> = ({ distributors }) => {
         </div>
       </section>
       <section className="w-full h-screen max-h-[calc(100vh-4.5rem)]">
-        <Map
-          latitude={latitude}
-          longitude={longitude}
-          postalCodeSubmitted={postalCodesSubmitted}
-          setPostalCodeSubmitted={handlePostalCode}
-          setLatitude={setLatitude}
-          setLongitude={setLongitude}
-          hasError={error}
-          locatesInfo={distributors}
-        />
+        {data?.data && (
+          <Map
+            latitude={latitude}
+            longitude={longitude}
+            postalCodeSubmitted={postalCodesSubmitted}
+            setPostalCodeSubmitted={handlePostalCode}
+            setLatitude={setLatitude}
+            setLongitude={setLongitude}
+            hasError={error}
+            locatesInfo={data?.data}
+          />
+        )}
       </section>
     </>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await supabase.from('distributors').select('*');
-
-  return {
-    props: {
-      distributors: data || [],
-    },
-    revalidate: 5 * 60 * 60,
-  };
 };
 
 export default Distributor;

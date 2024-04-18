@@ -85,7 +85,7 @@ const MapComp = ({
           )
           .replace('{distributor}', coordinate.company ? coordinate.distributor : '')
           .replace('{phone1}', coordinate.phone.toString().split('/')[0])
-          .replace('{phone2}', coordinate.phone.toString().split('/')[1])
+          .replace('{phone2}', coordinate.phone.toString().split('/')[1] || '')
           .replace('{email}', coordinate.email)
           .replace(
             '{locale}',
