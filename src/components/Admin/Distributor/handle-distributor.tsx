@@ -225,6 +225,7 @@ export const HandleDistributor = ({
                   name="phone"
                   required
                   placeholder="(44) 91111-1111"
+                  className="input w-full"
                   value={phone2}
                   onChange={({ target: { value } }) => setPhone2(value)}
                 />
@@ -235,6 +236,7 @@ export const HandleDistributor = ({
                   id="phone2"
                   name="phone2"
                   placeholder="(44) 91111-1111"
+                  className="input w-full"
                   value={phone}
                   onChange={({ target: { value } }) => setPhone(value)}
                 />
