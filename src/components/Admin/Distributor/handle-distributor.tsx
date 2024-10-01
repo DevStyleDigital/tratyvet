@@ -220,26 +220,10 @@ export const HandleDistributor = ({
               </div>
               <div className="space-y-2">
                 <Label htmlFor="phone">Telefone/Celular*</Label>
-                <InputMask
+                <input
                   id="phone"
                   name="phone"
                   required
-                  mask={[
-                    '(',
-                    /\d/,
-                    /\d/,
-                    ')',
-                    ' ',
-                    /\d/,
-                    /\d/,
-                    /\d/,
-                    /\d/,
-                    '-',
-                    /\d/,
-                    /\d/,
-                    /\d/,
-                    /\d/,
-                  ]}
                   placeholder="(44) 91111-1111"
                   value={phone2}
                   onChange={({ target: { value } }) => setPhone2(value)}
@@ -247,25 +231,9 @@ export const HandleDistributor = ({
               </div>
               <div className="space-y-2">
                 <Label htmlFor="phone2">Telefone/Celular 2 (opcional)</Label>
-                <InputMask
+                <input
                   id="phone2"
                   name="phone2"
-                  mask={[
-                    '(',
-                    /\d/,
-                    /\d/,
-                    ')',
-                    ' ',
-                    /\d/,
-                    /\d/,
-                    /\d/,
-                    /\d/,
-                    '-',
-                    /\d/,
-                    /\d/,
-                    /\d/,
-                    /\d/,
-                  ]}
                   placeholder="(44) 91111-1111"
                   value={phone}
                   onChange={({ target: { value } }) => setPhone(value)}
